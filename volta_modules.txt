@@ -1,0 +1,6 @@
+runtime node@18.16.1 (default)
+package-manager yarn@1.22.19 (default)
+package browser-sync@2.29.3 / browser-sync / node@18.16.1 npm@built-in (default)
+package nodemon@3.0.0 / nodemon / node@18.16.1 npm@built-in (default)
+package npkill@0.11.3 / npkill / node@18.16.1 npm@built-in (default)
+package serve@14.2.0 / serve / node@18.16.1 npm@built-in (default)

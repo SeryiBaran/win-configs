@@ -1,0 +1,150 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">Microsoft.PowerShell.ConsoleGuiTools</S>
+      <Version N="Version">0.7.2</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Cross-platform Console Gui Tools for PowerShell</S>
+      <S N="Author">PowerShell Team</S>
+      <Obj N="CompanyName" RefId="1">
+        <TN RefId="1">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>tyler</S>
+          <S>andschwa</S>
+        </LST>
+      </Obj>
+      <S N="Copyright">(c) Microsoft Corporation.</S>
+      <DT N="PublishedDate">2022-08-25T21:12:46+03:00</DT>
+      <Obj N="InstalledDate" RefId="2">
+        <DT>2023-07-06T11:31:39.1656156+03:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="3">
+            <TN RefId="2">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://github.com/PowerShell/GraphicalTools/blob/master/LICENSE.txt</URI>
+      <URI N="ProjectUri">https://github.com/PowerShell/GraphicalTools/</URI>
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="4">
+        <TNRef RefId="1" />
+        <LST>
+          <S>Console</S>
+          <S>Gui</S>
+          <S>Out-GridView</S>
+          <S>Out-ConsoleGridView</S>
+          <S>Terminal.Gui</S>
+          <S>gui.cs</S>
+          <S>MacOS</S>
+          <S>Windows</S>
+          <S>Linux</S>
+          <S>PSEdition_Core</S>
+          <S>PSModule</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="5">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="1" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Out-ConsoleGridView</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Obj N="Value" RefId="8">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Out-ConsoleGridView</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes"># Release Notes_x000D__x000A_## v0.7.0_x000D__x000A__x000D__x000A_Upgraded to PowerShell 7.2 and .NET target framework `net60`_x000D__x000A__x000D__x000A_Updated Terminal.Gui to 1.7_x000D__x000A__x000D__x000A_Fixed #131 - Strip ANSI_x000D__x000A__x000D__x000A_## v0.6.3_x000D__x000A__x000D__x000A_Unreleased!_x000D__x000A__x000D__x000A_## v0.6.2_x000D__x000A__x000D__x000A_Update Terminal.Gui to 1.0._x000D__x000A__x000D__x000A_Disable mouse mode to fix bug with mouse movement being printed to console._x000D__x000A__x000D__x000A_Gracefully fail when running in remote sessions._x000D__x000A__x000D__x000A_## v0.6.1_x000D__x000A__x000D__x000A_Fix off-by-one error with ellipsis so columns should be better aligned._x000D__x000A__x000D__x000A_## v0.6.0_x000D__x000A__x000D__x000A_Now supports `-Filter` parameter._x000D__x000A__x000D__x000A_Updated to use the final release of `Terminal.Gui` v0.90 (which is feature complete for 1.0)._x000D__x000A__x000D__x000A_## v0.5.0_x000D__x000A__x000D__x000A_`Out-ConsoleGridView` has been totally refactored!_x000D__x000A__x000D__x000A_First off, no more silly F9 menu to accept!_x000D__x000A_All you have to do is hit `ENTER` to accept your selection or `ESC` to cancel._x000D__x000A__x000D__x000A_Also, `-OutputMode` works as expected now. `Single` lets you only select one item. `Multiple` is the default._x000D__x000A__x000D__x000A_## v0.4.1_x000D__x000A__x000D__x000A_* Fix filter indexing to return correct selected objects_x000D__x000A__x000D__x000A_## v0.4.0_x000D__x000A__x000D__x000A_* Regex filter_x000D__x000A_* Newlines rendering fix (Thanks @tig!)_x000D__x000A__x000D__x000A_## v0.3.0_x000D__x000A__x000D__x000A_* Windows OS support (PS 6.2+)_x000D__x000A_* dynamic column widths_x000D__x000A_* Fix arrow key issue on non-Windows_x000D__x000A__x000D__x000A_## v0.2.0_x000D__x000A__x000D__x000A_Initial Release</S>
+      <Obj N="Dependencies" RefId="9">
+        <TNRef RefId="1" />
+        <LST />
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="10">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">(c) Microsoft Corporation.</S>
+          <S N="description">Cross-platform Console Gui Tools for PowerShell</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="releaseNotes"># Release Notes_x000D__x000A_## v0.7.0_x000D__x000A__x000D__x000A_Upgraded to PowerShell 7.2 and .NET target framework `net60`_x000D__x000A__x000D__x000A_Updated Terminal.Gui to 1.7_x000D__x000A__x000D__x000A_Fixed #131 - Strip ANSI_x000D__x000A__x000D__x000A_## v0.6.3_x000D__x000A__x000D__x000A_Unreleased!_x000D__x000A__x000D__x000A_## v0.6.2_x000D__x000A__x000D__x000A_Update Terminal.Gui to 1.0._x000D__x000A__x000D__x000A_Disable mouse mode to fix bug with mouse movement being printed to console._x000D__x000A__x000D__x000A_Gracefully fail when running in remote sessions._x000D__x000A__x000D__x000A_## v0.6.1_x000D__x000A__x000D__x000A_Fix off-by-one error with ellipsis so columns should be better aligned._x000D__x000A__x000D__x000A_## v0.6.0_x000D__x000A__x000D__x000A_Now supports `-Filter` parameter._x000D__x000A__x000D__x000A_Updated to use the final release of `Terminal.Gui` v0.90 (which is feature complete for 1.0)._x000D__x000A__x000D__x000A_## v0.5.0_x000D__x000A__x000D__x000A_`Out-ConsoleGridView` has been totally refactored!_x000D__x000A__x000D__x000A_First off, no more silly F9 menu to accept!_x000D__x000A_All you have to do is hit `ENTER` to accept your selection or `ESC` to cancel._x000D__x000A__x000D__x000A_Also, `-OutputMode` works as expected now. `Single` lets you only select one item. `Multiple` is the default._x000D__x000A__x000D__x000A_## v0.4.1_x000D__x000A__x000D__x000A_* Fix filter indexing to return correct selected objects_x000D__x000A__x000D__x000A_## v0.4.0_x000D__x000A__x000D__x000A_* Regex filter_x000D__x000A_* Newlines rendering fix (Thanks @tig!)_x000D__x000A__x000D__x000A_## v0.3.0_x000D__x000A__x000D__x000A_* Windows OS support (PS 6.2+)_x000D__x000A_* dynamic column widths_x000D__x000A_* Fix arrow key issue on non-Windows_x000D__x000A__x000D__x000A_## v0.2.0_x000D__x000A__x000D__x000A_Initial Release</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">14652</S>
+          <S N="downloadCount">57217</S>
+          <S N="packageSize">384226</S>
+          <S N="published">25.08.2022 21:12:46 +03:00</S>
+          <S N="created">25.08.2022 21:12:46 +03:00</S>
+          <S N="lastUpdated">06.07.2023 8:31:10 +03:00</S>
+          <S N="tags">Console Gui Out-GridView Out-ConsoleGridView Terminal.Gui gui.cs MacOS Windows Linux PSEdition_Core PSModule PSCmdlet_Out-ConsoleGridView PSCommand_Out-ConsoleGridView PSIncludes_Cmdlet</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2023-07-06T08:31:10Z</S>
+          <S N="NormalizedVersion">0.7.2</S>
+          <S N="Authors">PowerShell Team</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">Microsoft.PowerShell.ConsoleGuiTools.nuspec|Microsoft.PowerShell.ConsoleGuiTools.psd1|Microsoft.PowerShell.ConsoleGuiTools.dll|NStack.dll|Microsoft.PowerShell.OutGridView.Models.dll|Microsoft.PowerShell.OutGridView.Models.pdb|Terminal.Gui.dll|LICENSE.txt|README.md|en-US\ConsoleGuiToolsModule.dll-Help.xml|Microsoft.PowerShell.ConsoleGuiTools.pdb</S>
+          <S N="GUID">06028f35-8304-4460-ae73-306741982afe</S>
+          <S N="PowerShellVersion">7.2</S>
+          <S N="CompanyName">Microsoft</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\ivan\Documents\PowerShell\Modules\Microsoft.PowerShell.ConsoleGuiTools\0.7.2</S>
+    </MS>
+  </Obj>
+</Objs>

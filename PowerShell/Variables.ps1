@@ -1,0 +1,10 @@
+# $env:DOTNET_CLI_UI_LANGUAGE = "en_US"
+$env:DOTNET_CLI_UI_LANGUAGE = "en-us"
+$env:PSModulePath = "E:\files\projects\Powershell_Modules;C:\Users\ivan\Documents\PowerShell\Modules;C:\Program Files\PowerShell\Modules;c:\program files\powershell\7\Modules;C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules"
+
+$GeneralProfile = $PROFILE.CurrentUserAllHosts
+
+# https://github.com/PowerShell/vscode-powershell/issues/1074
+$OutputEncoding = [console]::InputEncoding = [console]::OutputEncoding = New-Object System.Text.UTF8Encoding
+
+$PromptProgram = "my"

@@ -1,0 +1,10 @@
+
+Name             Version   Source     Updated             Info
+----             -------   ------     -------             ----
+Iosevka-NF       3.0.2     nerd-fonts 2023-07-10 17:07:10 
+kitty            0.76.1.12 extras     2023-07-10 11:41:18 
+lazygit          0.38.2    extras     2023-07-09 21:59:21 
+netcat           1.12      main       2023-07-08 18:08:01 
+scoop-completion 0.2.4     extras     2023-07-09 10:50:08 
+ugrep            3.12.2    main       2023-07-10 11:11:12 
+
