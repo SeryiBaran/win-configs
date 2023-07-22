@@ -51,6 +51,7 @@ $CustomAscii = @(
     New-Text "██      ██ ██ ██  ██         ██ " -ForegroundColor red
     New-Text "██      ██ ██  ██ ██     ██  ██ " -ForegroundColor red
     New-Text "███████ ██ ██   ████        ██  " -ForegroundColor red
+    New-Text "P.S> On desktops =)             "
 )
 
 # Make the logo blink
