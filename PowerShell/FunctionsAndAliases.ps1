@@ -123,7 +123,7 @@ function Backup-PSProfile {
 
   foreach ($item in $items) { Copy-Item $item.FullName -Destination "E:\files\A.ВАЖНЫЕ\PROGRAMS\PowerShell$($item.PSIsContainer ? "\$($item.Name)" : '')" -Recurse -Force }
 
-  Get-Module -All > E:\files\A.ВАЖНЫЕ\PROGRAMS\pwsh_modules.txt && (Get-Module -All).name >> E:\files\A.ВАЖНЫЕ\PROGRAMS\pwsh_modules.txt
+  Get-Module > E:\files\A.ВАЖНЫЕ\PROGRAMS\pwsh_modules.txt && (Get-Module).name >> E:\files\A.ВАЖНЫЕ\PROGRAMS\pwsh_modules.txt
 }
 
 function Backup-AHKScripts {
