@@ -2,25 +2,37 @@
 ModuleType Version    PreRelease Name                                ExportedCommands
 ---------- -------    ---------- ----                                ----------------
 Script     0.0                   chocolateyProfile                   {TabExpansion, Update-SessionEnvironment, refreshe…
+Manifest   0.1.1                 CompletionPredictor                 
 Binary     7.3.5.500             Microsoft.PowerShell.Commands.Mana… {Add-Content, Clear-Content, Clear-ItemProperty, C…
 Binary     7.3.5.500             Microsoft.PowerShell.Commands.Util… {Add-Member, Add-Type, Compare-Object, ConvertFrom…
 Manifest   7.0.0.0               Microsoft.PowerShell.Management     {Add-Content, Clear-Content, Clear-Item, Clear-Ite…
 Binary     2.2.6.0               Microsoft.PowerShell.PSReadLine2    {Get-PSReadLineOption, Set-PSReadLineOption, Set-P…
 Manifest   7.0.0.0               Microsoft.PowerShell.Utility        {Add-Member, Add-Type, Clear-Variable, Compare-Obj…
+Script     0.1.0                 npm-completion                      
 Binary     1.0.0.0               Pansies                             {Get-ColorWheel, Get-Complement, Get-Gradient, New…
 Script     2.6.0                 Pansies                             {Get-ColorWheel, Get-Complement, Get-Gradient, New…
 Script     1.1.0                 posh-git                            {Add-PoshGitToProfile, Expand-GitCommand, Format-G…
+Binary     1.0.0.0               PowerShell.Predictor                
 Script     2.2.6                 PSReadLine                          {Get-PSReadLineKeyHandler, Get-PSReadLineOption, R…
+Script     1.1                   PublishProject                      Publish-Project
+Script     2.2                   QuickIp                             {Reset-QuickIP, Set-QuickIP}
 Script     0.2.4                 scoop-completion                    TabExpansion
+Script     1.0                   TestNodeJSVersion                   Test-NodeJSVersion
 
 chocolateyProfile
+CompletionPredictor
 Microsoft.PowerShell.Commands.Management
 Microsoft.PowerShell.Commands.Utility
 Microsoft.PowerShell.Management
 Microsoft.PowerShell.PSReadLine2
 Microsoft.PowerShell.Utility
+npm-completion
 Pansies
 Pansies
 posh-git
+PowerShell.Predictor
 PSReadLine
+PublishProject
+QuickIp
 scoop-completion
+TestNodeJSVersion
