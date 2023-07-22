@@ -1,4 +1,6 @@
 Set-PSReadLineKeyHandler -Key Tab -Function MenuComplete
+# Set-PSReadLineOption -PredictionViewStyle ListView
+Set-PSReadLineOption -PredictionSource HistoryAndPlugin
 
 # https://github.com/PowerShell/PSReadLine/issues/1468#issuecomment-752172667
 # Search auto-completion from history
