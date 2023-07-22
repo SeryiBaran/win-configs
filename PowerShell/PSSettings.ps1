@@ -8,3 +8,5 @@ Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
 # Show auto-complete predictions from history
 Set-PSReadLineOption -ShowToolTips
 Set-PSReadLineOption -PredictionSource history
+
+Set-PSReadLineKeyHandler -Key Ctrl+RightArrow -Function AcceptNextSuggestionWord
