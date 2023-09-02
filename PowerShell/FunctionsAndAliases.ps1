@@ -135,13 +135,20 @@ function Backup-AHKScripts {
 function Get-IP {
   [CmdletBinding()]
   param(
-    [Parameter(Mandatory=$True)]
     [alias("i")]
     [string]
     $Interface
   )
 
-  Get-NetIPAddress -AddressFamily IPv4 -InterfaceAlias $Interface | Select-Object -Property InterfaceAlias, IPAddress
+  $args = @{
+    AddressFamily = "IPv4"
+  }
+
+  if ($Interface) {
+    $args.InterfaceAlias = $Interface
+  }
+
+  Get-NetIPAddress @args | Select-Object -Property InterfaceAlias, IPAddress
 }
 
 function tb {
@@ -168,4 +175,24 @@ function npp {
 
 function lg {
   lazygit $args
+}
+
+function Clear-MyHistory {
+  Write-Output "" > (Get-PSReadlineOption).HistorySavePath
+}
+
+function Remove-HeadphonesNoise {
+  $code =
+@"
+import random
+
+while True:
+    random.randint(500, 99999)
+"@
+
+  echo $code | python
+}
+
+function subl {
+  & "C:\\Program Files\\Sublime Text\\sublime_text.exe" $args
 }

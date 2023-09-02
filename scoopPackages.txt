@@ -1,10 +1,16 @@
 
-Name             Version   Source     Updated             Info
-----             -------   ------     -------             ----
-Iosevka-NF       3.0.2     nerd-fonts 2023-07-10 17:07:10 
-kitty            0.76.1.12 extras     2023-07-10 11:41:18 
-lazygit          0.38.2    extras     2023-07-09 21:59:21 
-netcat           1.12      main       2023-07-08 18:08:01 
-scoop-completion 0.2.4     extras     2023-07-09 10:50:08 
-ugrep            3.12.2    main       2023-07-10 11:11:12 
+Name             Version     Source Updated             In
+                                                        fo
+----             -------     ------ -------             --
+7zip             23.01       main   2023-07-13 19:20:36 
+innounp          0.50        main   2023-09-02 11:43:26 
+lazygit          0.38.2      extras 2023-07-09 21:59:21 
+mpv                                 2023-08-24 20:27:40 I…
+netcat           1.12        main   2023-07-08 18:08:01 
+networkmanager   2023.6.27.1 extras 2023-07-11 16:15:30 
+putty            0.78        extras 2023-07-11 16:40:40 
+qt-creator                          2023-08-30 09:49:50 I…
+scoop-completion 0.2.4       extras 2023-07-09 10:50:08 
+ugrep            3.12.2      main   2023-07-10 11:11:12 
+upx              4.1.0       main   2023-08-26 16:01:31 
 

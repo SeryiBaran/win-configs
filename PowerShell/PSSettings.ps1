@@ -8,5 +8,5 @@ Set-PSReadLineOption -ShowToolTips
 Set-PSReadLineOption -PredictionSource history
 
 Set-PSReadLineKeyHandler -Key Tab -Function MenuComplete
-Set-PSReadLineKeyHandler -Key Ctrl+RightArrow -Function AcceptNextSuggestionWord
+# Set-PSReadLineKeyHandler -Key Ctrl+RightArrow -Function AcceptNextSuggestionWord
 Set-PSReadLineOption -PredictionSource HistoryAndPlugin

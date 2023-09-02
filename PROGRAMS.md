@@ -54,12 +54,17 @@
 | (pip) Httpie CLI                                             | <https://httpie.io/cli>                     |
 | (встроено в windows) Curl (доступен через curl.exe)          | <https://curl.se/windows/microsoft.html>    |
 | (MSYS2) awk, sed, less, grep, wget и остальные Linux утилиты | <https://www.msys2.org/>                    |
-| (MSYS2) diffutils, patch, ed                                 | <https://packages.msys2.org/>               |
+| (MSYS2) diffutils, patch, ed, base-devel, gcc                | <https://packages.msys2.org/>               |
 | (npm) http-server                                            | <https://github.com/http-party/http-server> |
 | (npm) serve                                                  | <https://github.com/vercel/serve>           |
 | chocolatey                                                   | <https://chocolatey.org/install>            |
 | scoop                                                        | <https://github.com/ScoopInstaller/Scoop>   |
 | volta                                                        | <https://volta.sh>                          |
+| VSCode                                                       | <https://code.visualstudio.com/>            |
+| Visual Studio (tools for C++, cmake, clang)                  | <https://visualstudio.microsoft.com/>       |
+| vcpkg                                                        | <https://vcpkg.io/en/>                      |
+| Rust lang                                                    | <https://www.rust-lang.org/>                |
+
 
 ## Пакеты choco и scoop
 

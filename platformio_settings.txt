@@ -1,0 +1,10 @@
+Name                          Current value [Default]                        Description
+----------------------------  ---------------------------------------------  --------------------------------------------------------------------
+check_platformio_interval     7                                              Check for the new PlatformIO Core interval (days)
+check_prune_system_threshold  1024                                           Check for pruning unnecessary data threshold (megabytes)
+enable_cache                  Yes                                            Enable caching for HTTP API requests
+enable_proxy_strict_ssl       Yes                                            Verify the proxy server certificate against the list of supplied CAs
+enable_telemetry              Yes                                            Telemetry service <https://bit.ly/pio-telemetry> (Yes/No)
+force_verbose                 No                                             Force verbose output when processing environments
+projects_dir                  E:\files\projects\AVRProjects                  Default location for PlatformIO projects (PlatformIO Home)
+                              [C:\Users\ivan\Documents\PlatformIO\Projects]
