@@ -1,3 +1,8 @@
+# https://github.com/microsoft/terminal/issues/3821#issuecomment-802548767
+$vsInstallPath = "E:\PROGRAMS\VISUAL_STUDIO\2022\Community"
+Import-Module "$vsInstallPath/Common7/Tools/Microsoft.VisualStudio.DevShell.dll"
+Enter-VsDevShell -VsInstallPath $vsInstallPath -SkipAutomaticLocation
+
 $ProfileDirectory = "$HOME\Documents\Powershell"
 
 # $env:DOTNET_CLI_UI_LANGUAGE = "en_US"
