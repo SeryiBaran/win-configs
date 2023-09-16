@@ -1,7 +1,6 @@
 Chocolatey v2.1.0
 chocolatey 2.1.0
-1 packages installed.
-
-Did you know Pro / Business automatically syncs with Programs and
- Features? Learn more about Package Synchronizer at
- https://chocolatey.org/compare
+chocolatey-compatibility.extension 1.0.0
+chocolatey-core.extension 1.4.0
+chocolatey-windowsupdate.extension 1.0.5
+4 packages installed.

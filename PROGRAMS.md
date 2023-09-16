@@ -46,6 +46,8 @@
 | ruplacer           | <https://github.com/your-tools/ruplacer/>                  |
 | fzf                | <https://github.com/junegunn/fzf>                          |
 | vim                | <https://github.com/vim/vim-win32-installer/releases>      |
+| eza                | <https://github.com/eza-community/eza>                     |
+| pastel             | <https://github.com/sharkdp/pastel>                        |
 
 ## Не в C:/pathTools
 
@@ -63,8 +65,9 @@
 | VSCode                                                       | <https://code.visualstudio.com/>            |
 | Visual Studio (tools for C++, cmake, clang)                  | <https://visualstudio.microsoft.com/>       |
 | vcpkg                                                        | <https://vcpkg.io/en/>                      |
-| Rust lang                                                    | <https://www.rust-lang.org/>                |
-
+| DosBox-X                                                     |<https://dosbox-x.com/>                      |
+| AutoHotkey                                                   |<https://www.autohotkey.com/>                |
+| WingetUI                                                     |<https://github.com/marticliment/WingetUI>   |
 
 ## Пакеты choco и scoop
 

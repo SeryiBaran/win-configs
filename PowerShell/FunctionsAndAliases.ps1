@@ -61,15 +61,13 @@ function ds {
 }
 
 function l {
-  lsd -la --header --blocks "size,date,name" --group-directories-first $args
+  #lsd -la --header --blocks "size,date,name" --group-directories-first $args
+  eza -Flah -s type --group-directories-first
 }
 
 function t {
-  lsd -a --tree -I "{node_modules,.git}" --group-directories-first $args
-}
-
-function v {
-  vim $args
+  #lsd -a --tree -I "{node_modules,.git}" --group-directories-first $args
+  l --tree --ignore-glob ".git|node_modules|.parcel-cache|.cache"
 }
 
 function m {
@@ -195,4 +193,8 @@ while True:
 
 function subl {
   & "C:\\Program Files\\Sublime Text\\sublime_text.exe" $args
+}
+
+function e {
+  explorer $args
 }
