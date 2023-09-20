@@ -63,11 +63,13 @@
 | scoop                                                        | <https://github.com/ScoopInstaller/Scoop>   |
 | volta                                                        | <https://volta.sh>                          |
 | VSCode                                                       | <https://code.visualstudio.com/>            |
-| Visual Studio (tools for C++, cmake, clang)                  | <https://visualstudio.microsoft.com/>       |
+| ~~Visual Studio (tools for C++, cmake, clang)~~              | <https://visualstudio.microsoft.com/>       |
 | vcpkg                                                        | <https://vcpkg.io/en/>                      |
-| DosBox-X                                                     |<https://dosbox-x.com/>                      |
-| AutoHotkey                                                   |<https://www.autohotkey.com/>                |
-| WingetUI                                                     |<https://github.com/marticliment/WingetUI>   |
+| DosBox-X                                                     | <https://dosbox-x.com/>                     |
+| AutoHotkey                                                   | <https://www.autohotkey.com/>               |
+| WingetUI                                                     | <https://github.com/marticliment/WingetUI>  |
+| ~~NvChad~~                                                   | <https://nvchad.com/>                       |
+| AstroNvim                                                    | <https://astronvim.com/>                    |
 
 ## Пакеты choco и scoop
 
