@@ -1,7 +1,7 @@
 # https://github.com/microsoft/terminal/issues/3821#issuecomment-802548767
-$vsInstallPath = "E:\PROGRAMS\VISUAL_STUDIO\2022\Community"
-Import-Module "$vsInstallPath/Common7/Tools/Microsoft.VisualStudio.DevShell.dll"
-Enter-VsDevShell -VsInstallPath $vsInstallPath -SkipAutomaticLocation
+#$vsInstallPath = "E:\PROGRAMS\VISUAL_STUDIO\2022\Community"
+#Import-Module "$vsInstallPath/Common7/Tools/Microsoft.VisualStudio.DevShell.dll"
+#Enter-VsDevShell -VsInstallPath $vsInstallPath -SkipAutomaticLocation
 
 $ProfileDirectory = "$HOME\Documents\Powershell"
 
@@ -14,15 +14,12 @@ $GeneralProfile = $PROFILE.CurrentUserAllHosts
 # https://github.com/PowerShell/vscode-powershell/issues/1074
 $OutputEncoding = [console]::InputEncoding = [console]::OutputEncoding = New-Object System.Text.UTF8Encoding
 
-$PromptProgram = "starship"
+$PromptProgram = "my"
 
 # Import-Module npm-completion
 # Import-Module CompletionPredictor
-Import-Module posh-git
-Import-Module Pansies
-# Import-Module QuickIp
-Import-Module PublishProject
-# Import-Module TestNodeJSVersion
+# Import-Module posh-git
+# Import-Module Pansies
 
 . $ProfileDirectory\FunctionsAndAliases.ps1
 . $ProfileDirectory\PSSettings.ps1

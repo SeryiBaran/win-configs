@@ -62,12 +62,12 @@ function ds {
 
 function l {
   #lsd -la --header --blocks "size,date,name" --group-directories-first $args
-  eza -Flah -s type --group-directories-first
+  eza -Flah -s type --group-directories-first $args
 }
 
 function t {
   #lsd -a --tree -I "{node_modules,.git}" --group-directories-first $args
-  l --tree --ignore-glob ".git|node_modules|.parcel-cache|.cache"
+  eza -Flah -s type --group-directories-first --tree --ignore-glob ".git|node_modules|.parcel-cache|.cache" $args
 }
 
 function m {
