@@ -14,7 +14,7 @@ $GeneralProfile = $PROFILE.CurrentUserAllHosts
 # https://github.com/PowerShell/vscode-powershell/issues/1074
 $OutputEncoding = [console]::InputEncoding = [console]::OutputEncoding = New-Object System.Text.UTF8Encoding
 
-$PromptProgram = "my"
+$PromptProgram = "starship"
 
 # Import-Module npm-completion
 # Import-Module CompletionPredictor

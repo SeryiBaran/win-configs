@@ -12,7 +12,6 @@
 | gost               | <https://github.com/go-gost/gost/blob/master/README_en.md> |
 | ssh-chat           | <https://github.com/shazow/ssh-chat>                       |
 | termchat           | <https://github.com/lemunozm/termchat>                     |
-| qrrs               | <https://github.com/Lenivaya/qrrs>                         |
 | ruplacer           | <https://github.com/your-tools/ruplacer/>                  |
 
 ## Пакеты choco и scoop
@@ -24,9 +23,10 @@
 | Название                                                     | Сайт                                        |
 | ------------------------------------------------------------ | ------------------------------------------- |
 | (pip) Httpie CLI                                             | <https://httpie.io/cli>                     |
+| (pip) apprise                                                | <https://github.com/caronc/apprise>         |
 | (встроено в windows) Curl (доступен через curl.exe)          | <https://curl.se/windows/microsoft.html>    |
 | (MSYS2) awk, sed, less, grep, wget и остальные Linux утилиты | <https://www.msys2.org/>                    |
-| (MSYS2) diffutils, patch, ed, base-devel, gcc                | <https://packages.msys2.org/>               |
+| (MSYS2) diffutils, patch, ed, ~~base-devel, gcc~~            | <https://packages.msys2.org/>               |
 | (npm) http-server                                            | <https://github.com/http-party/http-server> |
 | (npm) serve                                                  | <https://github.com/vercel/serve>           |
 | chocolatey                                                   | <https://chocolatey.org/install>            |

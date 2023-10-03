@@ -1,16 +1,14 @@
 
-ModuleType Version    PreRelease Name                                ExportedCommands
----------- -------    ---------- ----                                ----------------
-Script     0.0                   chocolateyProfile                   {TabExpansion, Update-SessionEnvironment, refreshe…
-Manifest   7.0.0.0               Microsoft.PowerShell.Management     {Add-Content, Clear-Content, Clear-Item, Clear-Ite…
-Manifest   7.0.0.0               Microsoft.PowerShell.Utility        {Add-Member, Add-Type, Clear-Variable, Compare-Obj…
-Script     2.6.0                 Pansies                             {Get-ColorWheel, Get-Complement, Get-Gradient, New…
-Script     2.2.6                 PSReadLine                          {Get-PSReadLineKeyHandler, Get-PSReadLineOption, R…
-Script     0.2.4                 scoop-completion                    TabExpansion
+    Directory: C:\Users\ivan\Documents\PowerShell\Modules
 
-chocolateyProfile
-Microsoft.PowerShell.Management
-Microsoft.PowerShell.Utility
-Pansies
-PSReadLine
-scoop-completion
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          22.07.2023    11:02                CompletionPredictor
+d----          06.07.2023    11:31                Microsoft.PowerShell.ConsoleGuiTools
+d----          22.07.2023    11:39                npm-completion
+d----          06.07.2023    15:34                OutConsolePicture
+d----          09.07.2023    21:17                Pansies
+d----          09.07.2023    10:54                posh-git
+d----          07.07.2023    22:51                PowerShellGet
+d----          26.08.2023    14:25                z
+

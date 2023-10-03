@@ -61,12 +61,12 @@
         "defaults": 
         {
             "closeOnExit": "always",
-            "colorScheme": "Alacritty",
+            "colorScheme": "One Half Dark",
             "cursorShape": "filledBox",
             "font": 
             {
                 "face": "JetBrainsMono Nerd Font",
-                "size": 13.0,
+                "size": 10.0,
                 "weight": "normal"
             },
             "startingDirectory": ".",

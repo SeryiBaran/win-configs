@@ -1,3 +1,0 @@
-﻿#Enter::
-Run wt
-return

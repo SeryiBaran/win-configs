@@ -99,7 +99,11 @@ function q {
 }
 
 function qr {
-  qrrs $args
+  $input | qrencode -t ANSI256UTF8 $args
+}
+
+function qrpng {
+  $input | qrencode -o qr.png $args
 }
 
 function Clear-MyHistory {
@@ -121,7 +125,7 @@ function Backup-PSProfile {
 
   foreach ($item in $items) { Copy-Item $item.FullName -Destination "E:\files\A.ВАЖНЫЕ\PROGRAMS\PowerShell$($item.PSIsContainer ? "\$($item.Name)" : '')" -Recurse -Force }
 
-  Get-Module > E:\files\A.ВАЖНЫЕ\PROGRAMS\pwsh_modules.txt && (Get-Module).name >> E:\files\A.ВАЖНЫЕ\PROGRAMS\pwsh_modules.txt
+  Get-ChildItem C:\Users\ivan\Documents\PowerShell\Modules > E:\files\A.ВАЖНЫЕ\PROGRAMS\pwsh_modules.txt
 }
 
 function Backup-AHKScripts {
@@ -163,7 +167,7 @@ function excel {
 
 function qalc {
   chcp 866
-  & "C:\Program Files\Qalculate\qalc.exe" $args
+  qalc.exe $args
   chcp 65001
 }
 
@@ -197,4 +201,8 @@ function subl {
 
 function e {
   explorer $args
+}
+
+function ff {
+  fastfetch --file "E:\files\A.ВАЖНЫЕ\PROGRAMS\FETCH_LOGO.txt" --structure Title:Separator:OS:Host:Uptime:Packages:Shell:Monitor:Terminal:TerminalFont:CPU:Memory:Version:Break:Colors $args
 }
