@@ -69,7 +69,7 @@
                 "size": 10.0,
                 "weight": "normal"
             },
-            "startingDirectory": ".",
+            "startingDirectory": null,
             "useAcrylic": false,
             "useAtlasEngine": false
         },
@@ -114,6 +114,19 @@
                 "icon": "ms-appx:///ProfileIcons/pwsh.png",
                 "name": "PowerShell (Admin)",
                 "startingDirectory": "%USERPROFILE%"
+            },
+            {
+                "altGrAliasing": true,
+                "antialiasingMode": "grayscale",
+                "commandline": "%comspec% /k \"E:\\PROGRAMS\\KICAD\\7.0\\bin\\kicad-cmd.bat\"",
+                "guid": "{acb6670d-38f1-44d5-8c88-c03813fa8eae}",
+                "hidden": false,
+                "historySize": 9001,
+                "icon": "ms-appx:///ProfileIcons/{0caa0dad-35be-5f56-a8ff-afceeeaa6101}.png",
+                "name": "KiCad",
+                "padding": "8, 8, 8, 8",
+                "snapOnInput": true,
+                "startingDirectory": "E:\\PROGRAMS\\KICAD\\7.0"
             }
         ]
     },

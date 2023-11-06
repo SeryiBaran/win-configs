@@ -40,3 +40,19 @@
 | WingetUI                                                     | <https://github.com/marticliment/WingetUI>  |
 | ~~NvChad~~                                                   | <https://nvchad.com/>                       |
 | AstroNvim                                                    | <https://astronvim.com/>                    |
+| ImageGlass                                                   | <https://imageglass.org/>                   |
+| WPS Office                                                   | <https://wps.com/>                          |
+| KiCad                                                        | <https://www.kicad.org/>                    |
+| Inkscape                                                     | <https://inkscape.org/>                     |
+| Calibre                                                      | <https://calibre-ebook.com/>                |
+| Google Chrome                                                | <https://www.google.com/intl/ru_ru/chrome/> |
+| Fritzing                                                     | <https://fritzing.org/>                     |
+| Aimp                                                         | <https://www.aimp.ru/>                      |
+| KeepassXC                                                    | <https://keepassxc.org/>                    |
+| Bulk Crap Uninstaller                                        | <https://www.bcuninstaller.com/>            |
+| FastStone Image Viewer                                       | <https://www.faststone.org/>                |
+| PDF X-Change                                                 | <https://pdf-xchange.eu/>                   |
+| ShareX                                                       | <https://getsharex.com/>                    |
+| Kdenlive                                                     | <https://kdenlive.org/>                     |
+| Mu Editor                                                    | <https://codewith.mu/>                      |
+| Open Server                                                  | <https://ospanel.io/>                       |
