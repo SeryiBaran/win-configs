@@ -2,17 +2,17 @@
 
 ## В C:/pathTools (берется из files/Tools/pathTools)
 
-| Название           | Сайт                                                       |
-| ------------------ | ---------------------------------------------------------- |
-| starship           | <https://github.com/starship/starship>                     |
-| oh-my-posh         | <https://github.com/JanDeDobbeleer/oh-my-posh>             |
-| teip               | <https://github.com/greymd/teip>                           |
-| vgrep              | <https://github.com/vrothberg/vgrep>                       |
-| bore               | <https://github.com/ekzhang/bore>                          |
-| gost               | <https://github.com/go-gost/gost/blob/master/README_en.md> |
-| ssh-chat           | <https://github.com/shazow/ssh-chat>                       |
-| termchat           | <https://github.com/lemunozm/termchat>                     |
-| ruplacer           | <https://github.com/your-tools/ruplacer/>                  |
+| Название   | Сайт                                                       |
+| ---------- | ---------------------------------------------------------- |
+| starship   | <https://github.com/starship/starship>                     |
+| oh-my-posh | <https://github.com/JanDeDobbeleer/oh-my-posh>             |
+| teip       | <https://github.com/greymd/teip>                           |
+| vgrep      | <https://github.com/vrothberg/vgrep>                       |
+| bore       | <https://github.com/ekzhang/bore>                          |
+| gost       | <https://github.com/go-gost/gost/blob/master/README_en.md> |
+| ssh-chat   | <https://github.com/shazow/ssh-chat>                       |
+| termchat   | <https://github.com/lemunozm/termchat>                     |
+| ruplacer   | <https://github.com/your-tools/ruplacer/>                  |
 
 ## Пакеты choco и scoop
 
@@ -56,3 +56,4 @@
 | Kdenlive                                                     | <https://kdenlive.org/>                     |
 | Mu Editor                                                    | <https://codewith.mu/>                      |
 | Open Server                                                  | <https://ospanel.io/>                       |
+| Arduino IDE, дрова CH340, CP2102 etc.                        |                                             |
