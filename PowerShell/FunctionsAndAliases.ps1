@@ -103,7 +103,7 @@ function qr {
 }
 
 function qrpng {
-  $input | qrencode -o qr.png $args
+  $input | qrencode -o qr.png -s 6 $args
 }
 
 function Clear-MyHistory {
@@ -121,17 +121,17 @@ function Update-MyHelp {
 function Backup-PSProfile {
   $items = Get-Item -Path "C:\Users\ivan\Documents\PowerShell\*" -Exclude ("Help")
 
-  Remove-Item -Recurse -Force "E:\files\A.ВАЖНЫЕ\PROGRAMS\PowerShell"
+  Remove-Item -Recurse -Force "E:\files\a_important\PROGRAMS\PowerShell"
 
-  foreach ($item in $items) { Copy-Item $item.FullName -Destination "E:\files\A.ВАЖНЫЕ\PROGRAMS\PowerShell$($item.PSIsContainer ? "\$($item.Name)" : '')" -Recurse -Force }
+  foreach ($item in $items) { Copy-Item $item.FullName -Destination "E:\files\a_important\PROGRAMS\PowerShell$($item.PSIsContainer ? "\$($item.Name)" : '')" -Recurse -Force }
 
-  Get-ChildItem C:\Users\ivan\Documents\PowerShell\Modules > E:\files\A.ВАЖНЫЕ\PROGRAMS\pwsh_modules.txt
+  Get-ChildItem C:\Users\ivan\Documents\PowerShell\Modules > E:\files\a_important\PROGRAMS\pwsh_modules.txt
 }
 
 function Backup-AHKScripts {
-  Remove-Item -Recurse -Force "E:\files\A.ВАЖНЫЕ\PROGRAMS\AutoHotkey"
+  Remove-Item -Recurse -Force "E:\files\a_important\PROGRAMS\AutoHotkey"
 
-  Copy-Item "C:\Users\ivan\Documents\AutoHotkey" -Destination "E:\files\A.ВАЖНЫЕ\PROGRAMS\AutoHotkey" -Recurse -Force
+  Copy-Item "C:\Users\ivan\Documents\AutoHotkey" -Destination "E:\files\a_important\PROGRAMS\AutoHotkey" -Recurse -Force
 }
 
 function Get-IP {
@@ -157,18 +157,10 @@ function tb {
   $input | nc termbin.com 9999
 }
 
-function word {
-  & "C:\Program Files\Microsoft Office\Office16\WINWORD.EXE" $args
-}
-
-function excel {
-  & "C:\Program Files\Microsoft Office\Office16\EXCEL.EXE" $args
-}
-
 function qalc {
-  chcp 866
-  qalc.exe $args
-  chcp 65001
+  #chcp 866
+  qalc.exe -t $args
+  #chcp 65001
 }
 
 function npp {
@@ -199,10 +191,22 @@ function subl {
   & "C:\\Program Files\\Sublime Text\\sublime_text.exe" $args
 }
 
-function e {
-  explorer $args
+function ff {
+  fastfetch --file "E:\files\a_important\PROGRAMS\FETCH_LOGO.txt" --structure Title:Separator:OS:Host:Uptime:Packages:Shell:Monitor:Terminal:TerminalFont:CPU:GPU:Memory:Version:Break:Colors $args
 }
 
-function ff {
-  fastfetch --file "E:\files\A.ВАЖНЫЕ\PROGRAMS\FETCH_LOGO.txt" --structure Title:Separator:OS:Host:Uptime:Packages:Shell:Monitor:Terminal:TerminalFont:CPU:Memory:Version:Break:Colors $args
+function e {
+  explorer $PWD $args
+}
+
+function dy {
+  $input | yt-dlp --compat-option filename-sanitization $args
+}
+
+function tc {
+  & "C:\\Program Files\\totalcmd\\TOTALCMD64.EXE" \L $PWD $args
+}
+
+function far {
+  & "c:\\Program Files\\Far Manager\\Far.exe" $PWD $args
 }

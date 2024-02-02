@@ -61,7 +61,7 @@
         "defaults": 
         {
             "closeOnExit": "always",
-            "colorScheme": "One Half Dark",
+            "colorScheme": "VSCode Gruvbox Material Dark",
             "cursorShape": "filledBox",
             "font": 
             {
@@ -338,6 +338,29 @@
             "selectionBackground": "#FFFFFF",
             "white": "#D3D7CF",
             "yellow": "#C4A000"
+        },
+        {
+            "background": "#292828",
+            "black": "#32302F",
+            "blue": "#7DAEA3",
+            "brightBlack": "#928374",
+            "brightBlue": "#7DAEA3",
+            "brightCyan": "#89B482",
+            "brightGreen": "#A9B665",
+            "brightPurple": "#D3869B",
+            "brightRed": "#EA6962",
+            "brightWhite": "#DDC7A1",
+            "brightYellow": "#D8A657",
+            "cursorColor": "#D4BE98",
+            "cyan": "#89B482",
+            "foreground": "#D4BE98",
+            "green": "#A9B665",
+            "name": "VSCode Gruvbox Material Dark",
+            "purple": "#D3869B",
+            "red": "#EA6962",
+            "selectionBackground": "#504945",
+            "white": "#D4BE98",
+            "yellow": "#D8A657"
         },
         {
             "background": "#000000",
