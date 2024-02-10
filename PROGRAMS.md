@@ -31,9 +31,9 @@
 | (npm) serve                                                  | <https://github.com/vercel/serve>           |
 | chocolatey                                                   | <https://chocolatey.org/install>            |
 | scoop                                                        | <https://github.com/ScoopInstaller/Scoop>   |
-| volta                                                        | <https://volta.sh>                          |
+| NVM for Windows                                              |                                             |
 | VSCode                                                       | <https://code.visualstudio.com/>            |
-| ~~Visual Studio (tools for C++, cmake, clang)~~              | <https://visualstudio.microsoft.com/>       |
+| Visual Studio (tools for C++, cmake, clang)                  | <https://visualstudio.microsoft.com/>       |
 | vcpkg                                                        | <https://vcpkg.io/en/>                      |
 | DosBox-X                                                     | <https://dosbox-x.com/>                     |
 | AutoHotkey                                                   | <https://www.autohotkey.com/>               |
@@ -41,7 +41,6 @@
 | ~~NvChad~~                                                   | <https://nvchad.com/>                       |
 | AstroNvim                                                    | <https://astronvim.com/>                    |
 | ImageGlass                                                   | <https://imageglass.org/>                   |
-| WPS Office                                                   | <https://wps.com/>                          |
 | KiCad                                                        | <https://www.kicad.org/>                    |
 | Inkscape                                                     | <https://inkscape.org/>                     |
 | Calibre                                                      | <https://calibre-ebook.com/>                |
@@ -57,3 +56,37 @@
 | Mu Editor                                                    | <https://codewith.mu/>                      |
 | Open Server                                                  | <https://ospanel.io/>                       |
 | Arduino IDE, дрова CH340, CP2102 etc.                        |                                             |
+| Microsoft Office 2021                                        |                                             |
+| Crow Translate                                               |                                             |
+| ColorMania                                                   |                                             |
+| Caramba Switcher                                             |                                             |
+| Temurin JRE 21                                               |                                             |
+| DOSBox-X                                                     |                                             |
+| FreePascal                                                   |                                             |
+| GIMP                                                         |                                             |
+| PascalABC.Net                                                |                                             |
+| OBS Studio                                                   |                                             |
+| Bandicam                                                     |                                             |
+| КОМПАС-3D 20                                                 |                                             |
+| VMWare Workstation                                           |                                             |
+| VirtualBox                                                   |                                             |
+| PeaZip                                                       |                                             |
+| 7-Zip                                                        |                                             |
+| Postman                                                      |                                             |
+| Powershell 7                                                 |                                             |
+| Process Hacker                                               |                                             |
+| Python                                                       |                                             |
+| qBitTorrent                                                  |                                             |
+| Sublime Text                                                 |                                             |
+| Telegram Desktop                                             |                                             |
+| TortoiseGit                                                  |                                             |
+| Total Commander                                              |                                             |
+| UltraISO                                                     |                                             |
+| UltraVNC                                                     |                                             |
+| Unchecky                                                     |                                             |
+| WingetUI                                                     |                                             |
+| Uninstall Tool                                               |                                             |
+| Bull Crap Uninstaller                                        |                                             |
+| WinCDEmu                                                     |                                             |
+| WinDirStat                                                   |                                             |
+| FlameShot                                                    |                                             |
