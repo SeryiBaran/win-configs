@@ -99,3 +99,4 @@
 | Docker Desktop                                               |                                               |
 | TranslucentTB                                                |                                               |
 | Lively Wallpaper                                             |                                               |
+| OpenHashTab                                                  | <https://github.com/namazso/OpenHashTab>      |
