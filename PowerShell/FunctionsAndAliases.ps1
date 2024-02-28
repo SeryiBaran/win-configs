@@ -142,15 +142,15 @@ function Get-IP {
     $Interface
   )
 
-  $args = @{
+  $command_args = @{
     AddressFamily = "IPv4"
   }
 
   if ($Interface) {
-    $args.InterfaceAlias = $Interface
+    $command_args.InterfaceAlias = $Interface
   }
 
-  Get-NetIPAddress @args | Select-Object -Property InterfaceAlias, IPAddress
+  Get-NetIPAddress @command_args | Select-Object -Property InterfaceAlias, IPAddress
 }
 
 function tb {
@@ -209,4 +209,8 @@ function tc {
 
 function far {
   & "c:\\Program Files\\Far Manager\\Far.exe" $PWD $args
+}
+
+function dns {
+  $input | dog -n 192.168.0.1 $args
 }
