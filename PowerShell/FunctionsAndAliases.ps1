@@ -214,3 +214,18 @@ function far {
 function dns {
   $input | dog -n 192.168.0.1 $args
 }
+
+function Show-Colors {
+  $Colors = [Enum]::GetValues([ConsoleColor])
+  ""
+  "Color          As Foreground  As Background"
+  "-----          -------------  -------------"
+  foreach($Color in $Colors) {
+    $Color = "$Color              "
+    $Color = $Color.substring(0, 15)
+    write-host -noNewline "$Color"
+    write-host -noNewline -foregroundcolor $Color "$Color"
+    write-host -noNewline -backgroundcolor $Color "$Color"
+    write-host ""
+  }
+}

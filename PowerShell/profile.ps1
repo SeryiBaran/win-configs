@@ -4,6 +4,7 @@
 #Enter-VsDevShell -VsInstallPath $vsInstallPath -SkipAutomaticLocation
 
 $ProfileDirectory = "$HOME\Documents\Powershell"
+$FleschutzPwsh = "$ProfileDirectory\fleschutz__Powershell\scripts"
 
 # $env:DOTNET_CLI_UI_LANGUAGE = "en_US"
 $env:DOTNET_CLI_UI_LANGUAGE = "en-us"
