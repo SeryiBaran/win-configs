@@ -1,9 +1,14 @@
 # miniserve function
 function s {
   [CmdletBinding()]
-  param([string]$path = ".", [int]$p = 3000, [string]$ip, [switch]$qr, [switch]$s)
+  param([string]$path = ".", [int]$p = 3000, [string]$ip, [switch]$qr, [switch]$s, [switch]$ForMobile)
 
   $argsList = [System.Collections.ArrayList]@()
+
+  if ($ForMobile) {
+    $argsList += ("--qrcode") # Enable QR code display
+    $argsList += ("--interfaces", (Get-IP Ethernet).IPAddress) # Interface to listen on
+  }
 
   if (-Not ($ip -eq "")) {
     $argsList += ("--interfaces", $ip) # Interface to listen on
@@ -228,4 +233,11 @@ function Show-Colors {
     write-host -noNewline -backgroundcolor $Color "$Color"
     write-host ""
   }
+}
+
+function Start-BrowserSyncServer {
+  [CmdletBinding()]
+  param([int]$p = 3000, [string]$ip = (Get-IP -Interface Ethernet).IPAddress)
+
+  browser-sync start --server --no-open --host $ip --port $p --files "./**/*.{html,css,js}"
 }
