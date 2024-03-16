@@ -216,7 +216,7 @@ function far {
   & "c:\\Program Files\\Far Manager\\Far.exe" $PWD $args
 }
 
-function dns {
+function Get-DNSInfo {
   $input | dog -n 192.168.0.1 $args
 }
 
@@ -240,4 +240,12 @@ function Start-BrowserSyncServer {
   param([int]$p = 3000, [string]$ip = (Get-IP -Interface Ethernet).IPAddress)
 
   browser-sync start --server --no-open --host $ip --port $p --files "./**/*.{html,css,js}"
+}
+
+function Show-PowerShellIntroduction {
+  & "$FleschutzPwsh\introduce-powershell.ps1"
+}
+
+function Get-TimeISO {
+  Get-Date -Format o | ForEach-Object { $_ -replace ":", "." }
 }
