@@ -264,7 +264,7 @@ function Backup-WinFetchConfig {
 }
 
 function Backup-WindowsTerminalConfig {
-  Copy-Item '$HOME\AppData\Local\Microsoft\Windows Terminal\settings.json' $DotfilesDir\windowsTerminalSettings.json
+  Copy-Item "$HOME\AppData\Local\Microsoft\Windows Terminal\settings.json" $DotfilesDir\windowsTerminalSettings.json
 }
 
 function Backup-GITConfig {
