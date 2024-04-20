@@ -3,22 +3,15 @@
 	email = seryibaranminepy@yandex.ru
 	signingkey = 5B3F7DE2C60571A1
 [alias]
-	s = status --short
+	s = status
 	co = checkout
-	r = restore
 	l = log --oneline --graph --decorate --all
-	rhard = reset --hard HEAD~1
-	rsoft = reset --soft HEAD~1
 	br = branch
-	lg = log --graph --abbrev-commit --decorate --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(dim white) - %an%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n %C(white)%s%C(reset)'
-	sg = status
-	df = diff
-	c = commit
 [safe]
 	directory = *
 [core]
 	autocrlf = true
-	editor = nano
+	editor = micro
 	sshcommand = C:/Users/ivan/scoop/shims/ssh.exe
 [filter "lfs"]
 	required = true

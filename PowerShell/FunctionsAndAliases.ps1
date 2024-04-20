@@ -124,19 +124,19 @@ function Update-MyHelp {
 }
 
 function Backup-PSProfile {
-  $items = Get-Item -Path "C:\Users\ivan\Documents\PowerShell\*" -Exclude ("Help")
+  $items = Get-Item -Path "$ProfileDirectory\*" -Exclude ("Help")
 
-  Remove-Item -Recurse -Force "E:\files\a_important\PROGRAMS\PowerShell"
+  Remove-Item -Recurse -Force "$DotfilesDir\PowerShell"
 
-  foreach ($item in $items) { Copy-Item $item.FullName -Destination "E:\files\a_important\PROGRAMS\PowerShell$($item.PSIsContainer ? "\$($item.Name)" : '')" -Recurse -Force }
+  foreach ($item in $items) { Copy-Item $item.FullName -Destination "$DotfilesDir\PowerShell$($item.PSIsContainer ? "\$($item.Name)" : '')" -Recurse -Force }
 
-  Get-ChildItem C:\Users\ivan\Documents\PowerShell\Modules > E:\files\a_important\PROGRAMS\pwsh_modules.txt
+  Get-ChildItem C:\Users\ivan\Documents\PowerShell\Modules > $DotfilesDir\pwsh_modules.txt
 }
 
 function Backup-AHKScripts {
-  Remove-Item -Recurse -Force "E:\files\a_important\PROGRAMS\AutoHotkey"
+  Remove-Item -Recurse -Force "$DotfilesDir\AutoHotkey"
 
-  Copy-Item "C:\Users\ivan\Documents\AutoHotkey" -Destination "E:\files\a_important\PROGRAMS\AutoHotkey" -Recurse -Force
+  Copy-Item "C:\Users\ivan\Documents\AutoHotkey" -Destination "$DotfilesDir\AutoHotkey" -Recurse -Force
 }
 
 function Get-IP {
@@ -182,14 +182,14 @@ function Clear-MyHistory {
 
 function Remove-HeadphonesNoise {
   $code =
-@"
+  @"
 import random
 
 while True:
     random.randint(500, 99999)
 "@
 
-  echo $code | python
+  Write-Output $code | python
 }
 
 function subl {
@@ -201,7 +201,7 @@ function wf {
 }
 
 function ff {
-  fastfetch --file "E:\\files\\a_important\\PROGRAMS\\FETCH_LOGO.txt" --structure Title:Separator:OS:Host:Uptime:Packages:Shell:Monitor:Terminal:TerminalFont:CPU:GPU:Memory:Version:Break:Colors $args
+  fastfetch --file $DotfilesDir\FETCH_LOGO.txt --structure Title:Separator:OS:Host:Uptime:Packages:Shell:Monitor:Terminal:TerminalFont:CPU:GPU:Memory:Version:Break:Colors $args
 }
 
 function e {
@@ -229,7 +229,7 @@ function Show-Colors {
   ""
   "Color          As Foreground  As Background"
   "-----          -------------  -------------"
-  foreach($Color in $Colors) {
+  foreach ($Color in $Colors) {
     $Color = "$Color              "
     $Color = $Color.substring(0, 15)
     write-host -noNewline "$Color"
@@ -252,4 +252,273 @@ function Show-PowerShellIntroduction {
 
 function Get-TimeISO {
   Get-Date -Format o | ForEach-Object { $_ -replace ":", "." }
+}
+
+function Backup-WinFetchConfig {
+  Copy-Item C:\Users\ivan\.config\winfetch\config.ps1 $DotfilesDir\winfetch_config.ps1
+}
+
+function Backup-WindowsTerminalConfig {
+  Copy-Item 'C:\Users\ivan\AppData\Local\Microsoft\Windows Terminal\settings.json' $DotfilesDir\windowsTerminalSettings.json
+}
+
+<#
+ .Synopsis
+  Copies public SSH key to remote server.
+
+ .Parameter RemoteHost
+  Remote host and user
+
+ .Parameter KeyFile
+  Public key local path
+
+ .Parameter RemotePort
+  Remote SSH port
+
+ .Example
+  Copy-SSHKey user@192.168.0.92
+#>
+function Copy-SSHKey {
+  [CmdletBinding()]
+  param(
+    [Parameter(Mandatory = $true)]
+    [alias("h")]
+    [string]
+    $RemoteHost,
+
+    [alias("k")]
+    [string]
+    $KeyFile = "$HOME/.ssh/id_rsa.pub",
+
+    [alias("p")]
+    [int]
+    $RemotePort = 22
+  )
+
+  try {
+    #    ssh $RemoteHost -p $RemotePort "mkdir ~/.ssh"
+    ssh $RemoteHost -p $RemotePort "mkdir ~/.ssh; chmod 700 ~/.ssh; touch ~/.ssh/authorized_keys; chmod 600 ~/.ssh/authorized_keys; echo "$(Get-Content $KeyFile)" >> ~/.ssh/authorized_keys"
+  }
+  catch {
+    Write-Error "Oh, error occurred:"
+    Write-Error $_
+    break
+  }
+
+  Write-Host "Succesfully copied!" -ForegroundColor green
+}
+
+<#
+ .Synopsis
+  Creates git repo and publish to GitHub
+
+ .Description
+  Creates git repo and publish to GitHub
+  A GitHub repository must be created.
+
+ .Parameter UseSSH
+  Use SSH or HTTPS (boolean)
+
+ .Parameter CustomName
+  Custom GitHub repository name (if repo name is not directory name)
+
+ .Example
+  Publish-Project
+
+ .Example
+  Publish-Project -s 0 -r RepoNameWhatNotEqualsDirectoryName # Don't use SSH and use custom repo name
+#>
+function Publish-Project {
+  [CmdletBinding()]
+  param(
+    [alias("s")]
+    [boolean]
+    $UseSSH = $True,
+
+    [alias("r")]
+    [string]
+    $RepoName
+  )
+
+  if ($RepoName) {
+    $DirectoryName = $RepoName
+  }
+  else {
+    $DirectoryName = (Get-Item .).Name
+  }
+
+  $GithubUser = $(git config user.name)
+
+  $HttpsRemote = "https://github.com/$GithubUser/$DirectoryName.git"
+  $SSHRemote = "git@github.com:$GithubUser/$DirectoryName.git"
+
+  if ($UseSSH) {
+    $Remote = $SSHRemote
+  }
+  else {
+    $Remote = $HttpsRemote
+  }
+
+  try {
+    git init
+    git add .
+    git commit -m "Init commit"
+    git branch -M main
+    git remote add origin $Remote
+    git push -u origin main
+  }
+  catch {
+    Write-Host "Oh, error occurred:" -ForegroundColor red
+    Write-Error $_
+    break
+  }
+
+  Write-Host "Done!" -ForegroundColor green
+}
+
+<#
+ .Synopsis
+  Sets a static IP address for interface.
+
+ .Parameter Interface
+  Net interface name.
+  Get it by `Get-NetIPAddress -AddressFamily IPv4 | Select-Object -Property InterfaceAlias,IPAddress`.
+
+ .Parameter IPAddress
+  New IP address.
+
+ .Parameter DontConfigDNS
+  If set, dont use current DNS in new settings.
+  Useful if your goal is connecting 2 PCs with a wire to create a dumb LAN without access to Internet.
+  Dont use if your goal is set static IP without loss access to Internet.
+
+ .Example
+  # Sets IP and save previous DNS settings
+  Set-QuickIP -i "Ethernet" -ip 192.168.0.32
+
+ .Example
+  # Sets IP and disable DNS config
+  Set-QuickIP -i "Ethernet" -ip 192.168.0.32 -DontConfigDNS
+#>
+function Set-QuickIP {
+  [CmdletBinding()]
+  param(
+    [parameter(Mandatory = $true)]
+    [alias("i")]
+    [string]
+    $Interface,
+
+    [parameter(Mandatory = $true)]
+    [alias("ip")]
+    [ipaddress]
+    $IPAddress,
+
+    [switch]
+    [alias("NoDns")]
+    $DontConfigDNS = $False
+  )
+
+  try {
+    $ipParams = @{
+      InterfaceAlias = $Interface
+      AddressFamily  = "IPv4"
+      IPAddress      = $IPAddress
+      PrefixLength   = 24
+    }
+    if (-not $DontConfigDNS) {
+      $CurrentDNSServers = ((Get-NetIPConfiguration -InterfaceAlias Ethernet).DNSServer | Where-Object { $_.AddressFamily -eq 2 }).ServerAddresses
+      $ipParams.DefaultGateway = (Get-NetIPConfiguration -InterfaceAlias Ethernet).IPv4DefaultGateway.NextHop
+    }
+
+    New-NetIPAddress @ipParams -ErrorAction Stop | Out-Null
+    if (-not $DontConfigDNS) {
+      Set-DnsClientServerAddress -InterfaceAlias $Interface -ServerAddresses $CurrentDNSServers -ErrorAction Stop | Out-Null
+    }
+    Restart-NetAdapter -InterfaceAlias $Interface -ErrorAction Stop | Out-Null
+  }
+  catch {
+    Write-Error "Oh, error occurred:"
+    Write-Error $_
+    break
+  }
+
+  Write-Host "Succesfully configured!" -ForegroundColor green
+}
+
+<#
+ .Synopsis
+  Resets settings of interface to default (DHCP + automatic DNS configuration).
+
+ .Parameter Interface
+  Net interface name.
+  Get it by `Get-NetIPAddress -AddressFamily IPv4 | Select-Object -Property InterfaceAlias,IPAddress`.
+
+ .Example
+  Reset-QuickIP -i "Ethernet"
+#>
+function Reset-QuickIP {
+  [CmdletBinding()]
+  param(
+    [parameter(Mandatory = $true)]
+    [alias("i")]
+    [string]
+    $Interface
+  )
+
+  try {
+    $IPAddress = (Get-NetIPAddress -InterfaceAlias $Interface -AddressFamily IPv4).IPAddress
+    $CurrentGateway = (Get-NetIPConfiguration -InterfaceAlias Ethernet).IPv4DefaultGateway.NextHop
+
+    Remove-NetIPAddress -IPAddress $IPAddress -Confirm:$false -ErrorAction Stop | Out-Null
+    Set-NetIPInterface -InterfaceAlias $Interface -Dhcp Enabled -ErrorAction Stop | Out-Null
+    if ($CurrentGateway) {
+      Remove-NetRoute -InterfaceAlias $Interface -NextHop $CurrentGateway -Confirm:$false -ErrorAction Stop | Out-Null
+    }
+    Set-DnsClientServerAddress -InterfaceAlias $Interface -ResetServerAddresses -ErrorAction Stop | Out-Null
+    Restart-NetAdapter -InterfaceAlias $Interface -ErrorAction Stop | Out-Null
+  }
+  catch {
+    Write-Error "Oh, error occurred:"
+    Write-Error $_
+    break
+  }
+  
+  Write-Host "Succesfully resetted!" -ForegroundColor green
+}
+
+<#
+ .Synopsis
+  Checks new NodeJS versions.
+
+ .Parameter CheckOnlyLTS
+  Check only LTS or all versions.
+
+ .Example
+  Test-NodeJSVersion -lts 1 # Checks only LTS
+
+ .Example
+  Test-NodeJSVersion -lts 0 # Checks all versions
+#>
+function Test-NodeJSVersion {
+  [CmdletBinding()]
+  param(
+    [alias("lts")]
+    [boolean]
+    $CheckOnlyLTS = $True
+  )
+  $NodeJSVersions = Invoke-RestMethod -Uri "https://nodejs.org/dist/index.json"
+  $LatestVersion = ($CheckOnlyLTS ? $NodeJSVersions.Where({ $_.lts }) : $NodeJSVersions)[0].version
+  $InstalledVersion = $(node -v)
+
+  if ($NodeJSVersions -and $LatestVersion -and $InstalledVersion) {
+    if ($InstalledVersion -ne $LatestVersion) {
+      Write-Host -ForegroundColor green "Time to update Nodejs!"
+      Write-Host -ForegroundColor blue "Current installed$($CheckOnlyLTS ? ' LTS ' : ' ')version: $(New-Text $InstalledVersion -ForegroundColor red)"
+      Write-Host -ForegroundColor blue "New$($CheckOnlyLTS ? ' LTS ' : ' ')version: $(New-Text $LatestVersion -ForegroundColor green)"
+      Write-Host -ForegroundColor blue "Info: You can use Volta, NVM, NVM Windows, n, asdf, etc. to update NodeJS."
+    }
+    else {
+      Write-Host "You use latest$($CheckOnlyLTS ? ' LTS ' : ' ')NodeJS version!" -ForegroundColor green
+    }
+  }
 }

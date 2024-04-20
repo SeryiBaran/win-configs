@@ -63,12 +63,14 @@
             "closeOnExit": "always",
             "colorScheme": "VSCode Vitesse Dark Theme",
             "cursorShape": "filledBox",
+            "experimental.retroTerminalEffect": false,
             "font": 
             {
-                "face": "Consolas",
-                "size": 9.0,
+                "face": "CozetteVector",
+                "size": 10.0,
                 "weight": "normal"
             },
+            "opacity": 100,
             "startingDirectory": null,
             "useAcrylic": false,
             "useAtlasEngine": false
