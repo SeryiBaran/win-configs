@@ -14,9 +14,15 @@ elseif ($PromptProgram -eq "starship") {
   }
 }
 elseif ($PromptProgram -eq "my") {
+  $env:VIRTUAL_ENV_DISABLE_PROMPT = 1
+
   function prompt {
     $status = $?
     $statusColor = $status -eq $True ? "blue" : "red"
+
+    $commandDurationBlock = if ($previousCommand = Get-History -Count 1) {
+      ' {0:N2}s' -f ($previousCommand.EndExecutionTime - $previousCommand.StartExecutionTime).TotalSeconds
+    }
 
     $loc = $executionContext.SessionState.Path.CurrentLocation;
     $prompt = "$([char]27)]9;12$([char]7)"
@@ -25,17 +31,19 @@ elseif ($PromptProgram -eq "my") {
     }
     $host.ui.Write($prompt)
 
-    # $path = $executionContext.SessionState.Path.CurrentLocation.Path
-    $path = switch -Wildcard ($executionContext.SessionState.Path.CurrentLocation.Path) {
+    $CurrentLocationPath = $executionContext.SessionState.Path.CurrentLocation.Path
+    $path = switch -Wildcard ($CurrentLocationPath) {
       "$HOME" { "~" }
-      "$HOME\*" { $executionContext.SessionState.Path.CurrentLocation.Path.Replace($HOME, "~") }
-      default { $executionContext.SessionState.Path.CurrentLocation.Path }
+      "$HOME\*" { $CurrentLocationPath.Replace($HOME, "~") }
+      default { $CurrentLocationPath }
     }
+
+    $CurrentLocationPathHasGit = Test-Path $CurrentLocationPath\.git
 
     $body = @"
 
-$(Text $Env:UserName -Fg red) $(Text $path -Fg green)
-$(Text '$' -Fg $statusColor) 
+$(Text $Env:UserName -Fg red) $(Text $path -Fg green)$($CurrentLocationPathHasGit ? (Text " (git)" -Fg yellow) : "")$commandDurationBlock
+$($env:VIRTUAL_ENV ? "$(Text "($(Split-Path $env:VIRTUAL_ENV -Leaf))" -Fg green) " : "")$(Text '$' -Fg $statusColor) 
 "@
 
     $body

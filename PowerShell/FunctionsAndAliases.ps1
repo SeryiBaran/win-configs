@@ -70,6 +70,11 @@ function l {
   eza -Flah -s type --group-directories-first $args
 }
 
+function ll {
+  #lsd -la --header --blocks "size,date,name" --group-directories-first $args
+  eza -Fah -s type --group-directories-first $args
+}
+
 function t {
   #lsd -a --tree -I "{node_modules,.git}" --group-directories-first $args
   eza -Flah -s type --group-directories-first --tree --ignore-glob ".git|node_modules|.parcel-cache|.cache" $args
@@ -130,13 +135,13 @@ function Backup-PSProfile {
 
   foreach ($item in $items) { Copy-Item $item.FullName -Destination "$DotfilesDir\PowerShell$($item.PSIsContainer ? "\$($item.Name)" : '')" -Recurse -Force }
 
-  Get-ChildItem C:\Users\ivan\Documents\PowerShell\Modules > $DotfilesDir\pwsh_modules.txt
+  Get-ChildItem $HOME\Documents\PowerShell\Modules > $DotfilesDir\pwsh_modules.txt
 }
 
 function Backup-AHKScripts {
   Remove-Item -Recurse -Force "$DotfilesDir\AutoHotkey"
 
-  Copy-Item "C:\Users\ivan\Documents\AutoHotkey" -Destination "$DotfilesDir\AutoHotkey" -Recurse -Force
+  Copy-Item "$HOME\Documents\AutoHotkey" -Destination "$DotfilesDir\AutoHotkey" -Recurse -Force
 }
 
 function Get-IP {
@@ -255,11 +260,15 @@ function Get-TimeISO {
 }
 
 function Backup-WinFetchConfig {
-  Copy-Item C:\Users\ivan\.config\winfetch\config.ps1 $DotfilesDir\winfetch_config.ps1
+  Copy-Item $HOME\.config\winfetch\config.ps1 $DotfilesDir\winfetch_config.ps1
 }
 
 function Backup-WindowsTerminalConfig {
-  Copy-Item 'C:\Users\ivan\AppData\Local\Microsoft\Windows Terminal\settings.json' $DotfilesDir\windowsTerminalSettings.json
+  Copy-Item '$HOME\AppData\Local\Microsoft\Windows Terminal\settings.json' $DotfilesDir\windowsTerminalSettings.json
+}
+
+function Backup-GITConfig {
+  Copy-Item $HOME/.gitconfig $DotfilesDir\.gitconfig__my
 }
 
 <#
