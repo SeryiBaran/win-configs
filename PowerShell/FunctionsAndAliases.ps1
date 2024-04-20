@@ -196,8 +196,12 @@ function subl {
   & "C:\\Program Files\\Sublime Text\\sublime_text.exe" $args
 }
 
+function wf {
+  winfetch
+}
+
 function ff {
-  fastfetch --file "E:\files\a_important\PROGRAMS\FETCH_LOGO.txt" --structure Title:Separator:OS:Host:Uptime:Packages:Shell:Monitor:Terminal:TerminalFont:CPU:GPU:Memory:Version:Break:Colors $args
+  fastfetch --file "E:\\files\\a_important\\PROGRAMS\\FETCH_LOGO.txt" --structure Title:Separator:OS:Host:Uptime:Packages:Shell:Monitor:Terminal:TerminalFont:CPU:GPU:Memory:Version:Break:Colors $args
 }
 
 function e {
