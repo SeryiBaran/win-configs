@@ -11,6 +11,10 @@
             }
         },
         {
+            "command": "unbound",
+            "keys": "ctrl+v"
+        },
+        {
             "command": 
             {
                 "action": "splitPane",
@@ -31,10 +35,6 @@
                 "splitMode": "duplicate"
             },
             "keys": "alt+shift+d"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+v"
         },
         {
             "command": 
@@ -66,7 +66,7 @@
             "experimental.retroTerminalEffect": false,
             "font": 
             {
-                "face": "CozetteVector",
+                "face": "CaskaydiaCove Nerd Font",
                 "size": 10.0,
                 "weight": "normal"
             },
@@ -96,11 +96,11 @@
                 "source": "Windows.Terminal.Azure"
             },
             {
-                "commandline": "E:/msys64/msys2_shell.cmd -defterm -here -no-start -msys",
+                "commandline": "E:\\PROGRAMS\\msys\\msys2_shell.cmd -defterm -here -no-start -ucrt64",
                 "guid": "{71160544-14d8-4194-af25-d05feeac7233}",
-                "icon": "E:/msys64/msys2.ico",
+                "icon": "E:\\PROGRAMS\\msys\\ucrt64.ico",
                 "name": "MSYS / MSYS2",
-                "startingDirectory": "E:/msys64/home/%USERNAME%"
+                "startingDirectory": "E:\\PROGRAMS\\msys\\home\\%USERNAME%"
             },
             {
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
@@ -116,19 +116,6 @@
                 "icon": "ms-appx:///ProfileIcons/pwsh.png",
                 "name": "PowerShell (Admin)",
                 "startingDirectory": "%USERPROFILE%"
-            },
-            {
-                "altGrAliasing": true,
-                "antialiasingMode": "grayscale",
-                "commandline": "%comspec% /k \"E:\\PROGRAMS\\KICAD\\7.0\\bin\\kicad-cmd.bat\"",
-                "guid": "{acb6670d-38f1-44d5-8c88-c03813fa8eae}",
-                "hidden": false,
-                "historySize": 9001,
-                "icon": "ms-appx:///ProfileIcons/{0caa0dad-35be-5f56-a8ff-afceeeaa6101}.png",
-                "name": "KiCad",
-                "padding": "8, 8, 8, 8",
-                "snapOnInput": true,
-                "startingDirectory": "E:\\PROGRAMS\\KICAD\\7.0"
             }
         ]
     },
@@ -412,49 +399,5 @@
         }
     ],
     "theme": "dark",
-    "themes": 
-    [
-        {
-            "name": "legacyDark",
-            "tab": 
-            {
-                "background": null,
-                "showCloseButton": "always",
-                "unfocusedBackground": null
-            },
-            "window": 
-            {
-                "applicationTheme": "dark",
-                "useMica": false
-            }
-        },
-        {
-            "name": "legacyLight",
-            "tab": 
-            {
-                "background": null,
-                "showCloseButton": "always",
-                "unfocusedBackground": null
-            },
-            "window": 
-            {
-                "applicationTheme": "light",
-                "useMica": false
-            }
-        },
-        {
-            "name": "legacySystem",
-            "tab": 
-            {
-                "background": null,
-                "showCloseButton": "always",
-                "unfocusedBackground": null
-            },
-            "window": 
-            {
-                "applicationTheme": "system",
-                "useMica": false
-            }
-        }
-    ]
+    "themes": []
 }
