@@ -28,7 +28,6 @@ C:\Users\ivan\scoop\apps\gpg4win\current\Gpg4win\bin
 C:\Users\ivan\AppData\Local\Volta\bin
 C:\Users\ivan\scoop\shims
 C:\Users\ivan\AppData\Local\Microsoft\WindowsApps
-C:\mingw64\bin
 C:\pathTools
 C:\Program Files\qemu
 C:\Users\ivan\AppData\Local\Programs\Microsoft VS Code\bin
@@ -57,5 +56,5 @@ e:\PROGRAMS\PASCALABCNET\PascalABC.NET
 C:\Program Files (x86)\NSIS
 C:\Program Files (x86)\sb_ffmpeg\bin
 e:\PROGRAMS\nasm-2.16.03\
-e:\PROGRAMS\msys\ucrt64\bin\
+E:\PROGRAMS\msys64\mingw64\bin
 
