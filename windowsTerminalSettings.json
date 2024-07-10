@@ -96,11 +96,11 @@
                 "source": "Windows.Terminal.Azure"
             },
             {
-                "commandline": "E:\\PROGRAMS\\msys\\msys2_shell.cmd -defterm -here -no-start -ucrt64",
+                "commandline": "E:\\PROGRAMS\\msys64\\msys2_shell.cmd -defterm -here -no-start -mingw64",
                 "guid": "{71160544-14d8-4194-af25-d05feeac7233}",
-                "icon": "E:\\PROGRAMS\\msys\\ucrt64.ico",
+                "icon": "E:\\PROGRAMS\\msys64\\mingw64.ico",
                 "name": "MSYS / MSYS2",
-                "startingDirectory": "E:\\PROGRAMS\\msys\\home\\%USERNAME%"
+                "startingDirectory": "E:\\PROGRAMS\\msys64\\home\\%USERNAME%"
             },
             {
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
