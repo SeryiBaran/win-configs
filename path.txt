@@ -1,9 +1,9 @@
 C:\Program Files\PowerShell\7
+E:\PROGRAMS\VMWARE\bin\
 E:\PROGRAMS\python_3_10_10\Scripts\
 E:\PROGRAMS\python_3_10_10\
 C:\Program Files\Eclipse Adoptium\jre-21.0.1.12-hotspot\bin
 C:\Users\ivan\scoop\apps\openssh\current
-C:\Program Files (x86)\VMware\VMware Workstation\bin\
 C:\Windows\system32
 C:\Windows
 C:\Windows\System32\Wbem
@@ -17,13 +17,11 @@ C:\Program Files\WindowsPowerShell\Scripts
 C:\ProgramData\chocolatey\bin
 C:\Program Files\dotnet\
 C:\Program Files\WireGuard\
-C:\Program Files\PowerShell\7\
 C:\Users\ivan\scoop\apps\gpg4win\current\Gpg4win\..\GnuPG\bin
-C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common
-C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR
 C:\Users\ivan\AppData\Roaming\nvm
 C:\Program Files\nodejs
 C:\Program Files\Calibre2\
+C:\Program Files\PowerShell\7\
 C:\Users\ivan\scoop\apps\gsudo\current
 C:\Users\ivan\scoop\apps\gpg4win\current\GnuPG\bin
 C:\Users\ivan\scoop\apps\gpg4win\current\Gpg4win\bin
@@ -54,8 +52,10 @@ E:\msys64\usr\bin
 C:\Program Files\JetBrains\WebStorm 2023.2.2\bin
 C:\Users\ivan\AppData\Roaming\nvm
 C:\Program Files\nodejs
-e:\tcc\
+e:\PROGRAMS\tcc\
 e:\PROGRAMS\PASCALABCNET\PascalABC.NET
 C:\Program Files (x86)\NSIS
 C:\Program Files (x86)\sb_ffmpeg\bin
+e:\PROGRAMS\nasm-2.16.03\
+e:\PROGRAMS\msys\ucrt64\bin\
 

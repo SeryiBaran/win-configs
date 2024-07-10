@@ -531,3 +531,7 @@ function Test-NodeJSVersion {
     }
   }
 }
+
+function Backup-Path {
+  $env:Path.Split(";") > $DotfilesDir\path.txt
+}
