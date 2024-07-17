@@ -535,3 +535,7 @@ function Test-NodeJSVersion {
 function Backup-Path {
   $env:Path.Split(";") > $DotfilesDir\path.txt
 }
+
+function Backup-AlacrittyConfig {
+  Copy-Item $HOME\AppData\Roaming\alacritty\alacritty.toml $DotfilesDir\alacritty.toml
+}
