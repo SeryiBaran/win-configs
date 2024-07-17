@@ -1,0 +1,13 @@
+[font]
+size = 13.0
+
+[font.normal]
+family = "CaskaydiaCove Nerd Font"
+
+[shell]
+args = ["-WorkingDirectory ~"]
+program = "pwsh"
+
+[window.dimensions]
+columns = 120
+lines = 31
