@@ -539,3 +539,18 @@ function Backup-Path {
 function Backup-AlacrittyConfig {
   Copy-Item $HOME\AppData\Roaming\alacritty\alacritty.toml $DotfilesDir\alacritty.toml
 }
+
+function Backup-ConEmuConfig {
+  Copy-Item $HOME\AppData\Roaming\ConEmu.xml $DotfilesDir\ConEmu.xml
+}
+
+function Backup-AllConfigsAAA {
+  Backup-PSProfile
+  Backup-AHKScripts
+  Backup-WinFetchConfig
+  Backup-WindowsTerminalConfig
+  Backup-GITConfig
+  Backup-Path
+  Backup-AlacrittyConfig
+  Backup-ConEmuConfig
+}

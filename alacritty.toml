@@ -1,8 +1,9 @@
 [font]
-size = 13.0
+size = 10.0
 
 [font.normal]
 family = "CaskaydiaCove Nerd Font"
+# family = "CozetteVector"
 
 [shell]
 args = ["-WorkingDirectory ~"]
@@ -10,4 +11,4 @@ program = "pwsh"
 
 [window.dimensions]
 columns = 120
-lines = 31
+lines = 30

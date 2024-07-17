@@ -1,4 +1,7 @@
 C:\Program Files\PowerShell\7
+C:\Program Files\ConEmu\ConEmu\Scripts
+C:\Program Files\ConEmu
+C:\Program Files\ConEmu\ConEmu
 E:\PROGRAMS\VMWARE\bin\
 E:\PROGRAMS\python_3_10_10\Scripts\
 E:\PROGRAMS\python_3_10_10\
@@ -45,9 +48,6 @@ C:\WindowsTerminal
 C:\Users\ivan\.platformio\penv\Scripts
 C:\Users\ivan\.dotnet\tools
 E:\PROGRAMS\VISUAL_STUDIO\vcpkg
-E:\msys64\mingw64\bin
-E:\msys64\mingw64\include
-E:\msys64\usr\bin
 C:\Program Files\JetBrains\WebStorm 2023.2.2\bin
 C:\Users\ivan\AppData\Roaming\nvm
 C:\Program Files\nodejs
@@ -55,6 +55,4 @@ e:\PROGRAMS\tcc\
 e:\PROGRAMS\PASCALABCNET\PascalABC.NET
 C:\Program Files (x86)\NSIS
 C:\Program Files (x86)\sb_ffmpeg\bin
-e:\PROGRAMS\nasm-2.16.03\
-E:\PROGRAMS\msys64\mingw64\bin
 
