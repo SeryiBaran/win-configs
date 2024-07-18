@@ -61,12 +61,12 @@
         "defaults": 
         {
             "closeOnExit": "always",
-            "colorScheme": "VSCode Vitesse Dark Theme",
+            "colorScheme": "One Half Dark",
             "cursorShape": "filledBox",
             "experimental.retroTerminalEffect": false,
             "font": 
             {
-                "face": "CaskaydiaCove Nerd Font",
+                "face": "CozetteVector",
                 "size": 10.0,
                 "weight": "normal"
             },

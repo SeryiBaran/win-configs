@@ -1,7 +1,4 @@
 C:\Program Files\PowerShell\7
-C:\Program Files\ConEmu\ConEmu\Scripts
-C:\Program Files\ConEmu
-C:\Program Files\ConEmu\ConEmu
 E:\PROGRAMS\VMWARE\bin\
 E:\PROGRAMS\python_3_10_10\Scripts\
 E:\PROGRAMS\python_3_10_10\
