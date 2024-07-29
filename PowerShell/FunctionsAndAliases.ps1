@@ -544,6 +544,10 @@ function Backup-ConEmuConfig {
   Copy-Item $HOME\AppData\Roaming\ConEmu.xml $DotfilesDir\ConEmu.xml
 }
 
+function Backup-ScoopList {
+  scoop export > $DotfilesDir\scoopPackages.txt
+}
+
 function Backup-AllConfigsAAA {
   Backup-PSProfile
   Backup-AHKScripts
@@ -553,4 +557,5 @@ function Backup-AllConfigsAAA {
   Backup-Path
   Backup-AlacrittyConfig
   Backup-ConEmuConfig
+  Backup-ScoopList
 }

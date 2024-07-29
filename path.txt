@@ -15,13 +15,13 @@ C:\Program Files\nodejs
 C:\Windows\System32\OpenSSH\
 C:\Program Files\WindowsPowerShell\Scripts
 C:\ProgramData\chocolatey\bin
-C:\Program Files\dotnet\
 C:\Program Files\WireGuard\
 C:\Users\ivan\scoop\apps\gpg4win\current\Gpg4win\..\GnuPG\bin
 C:\Users\ivan\AppData\Roaming\nvm
 C:\Program Files\nodejs
 C:\Program Files\Calibre2\
 C:\Program Files\PowerShell\7\
+C:\Program Files\dotnet\
 C:\Users\ivan\scoop\apps\gsudo\current
 C:\Users\ivan\scoop\apps\gpg4win\current\GnuPG\bin
 C:\Users\ivan\scoop\apps\gpg4win\current\Gpg4win\bin
@@ -52,4 +52,4 @@ e:\PROGRAMS\tcc\
 e:\PROGRAMS\PASCALABCNET\PascalABC.NET
 C:\Program Files (x86)\NSIS
 C:\Program Files (x86)\sb_ffmpeg\bin
-
+C:\Users\ivan\.dotnet\tools

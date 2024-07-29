@@ -1,478 +1,485 @@
 {
-    "apps": [
-        {
-            "Updated": "2023-07-13T19:20:36.8456669+03:00",
-            "Name": "7zip",
-            "Version": "23.01",
-            "Source": "main",
-            "Info": ""
-        },
-        {
-            "Updated": "2024-07-15T11:31:40.2618012+03:00",
-            "Name": "age",
-            "Version": "1.2.0",
-            "Source": "extras",
-            "Info": ""
-        },
-        {
-            "Updated": "2023-09-24T10:31:23.5799089+03:00",
-            "Name": "aria2",
-            "Version": "1.36.0-1",
-            "Source": "main",
-            "Info": ""
-        },
-        {
-            "Updated": "2023-09-24T10:31:28.0453583+03:00",
-            "Name": "ast-grep",
-            "Version": "0.12.1",
-            "Source": "main",
-            "Info": ""
-        },
-        {
-            "Updated": "2023-09-24T10:31:32.1327297+03:00",
-            "Name": "bat",
-            "Version": "0.23.0",
-            "Source": "main",
-            "Info": ""
-        },
-        {
-            "Updated": "2023-09-24T10:31:56.8688322+03:00",
-            "Name": "caddy",
-            "Version": "2.7.4",
-            "Source": "main",
-            "Info": ""
-        },
-        {
-            "Updated": "2023-09-09T15:28:14.825683+03:00",
-            "Name": "chk",
-            "Version": "5.00",
-            "Source": "extras",
-            "Info": ""
-        },
-        {
-            "Updated": "2023-09-05T09:28:12.2786902+03:00",
-            "Name": "cloc",
-            "Version": "1.98",
-            "Source": "main",
-            "Info": ""
-        },
-        {
-            "Updated": "2023-09-24T10:32:03.4798369+03:00",
-            "Name": "croc",
-            "Version": "9.6.5",
-            "Source": "main",
-            "Info": ""
-        },
-        {
-            "Updated": "2023-09-24T10:32:13.2492779+03:00",
-            "Name": "delta",
-            "Version": "0.16.5",
-            "Source": "main",
-            "Info": ""
-        },
-        {
-            "Updated": "2024-02-10T17:41:31.8001195+03:00",
-            "Name": "dog",
-            "Version": "0.1.0",
-            "Source": "main",
-            "Info": ""
-        },
-        {
-            "Updated": "2023-09-24T10:32:17.4089536+03:00",
-            "Name": "dufs",
-            "Version": "0.36.0",
-            "Source": "main",
-            "Info": ""
-        },
-        {
-            "Updated": "2023-09-24T10:32:21.0768035+03:00",
-            "Name": "ethr",
-            "Version": "1.0.0",
-            "Source": "main",
-            "Info": ""
-        },
-        {
-            "Updated": "2023-09-24T10:32:23.4561242+03:00",
-            "Name": "eza",
-            "Version": "0.13.0",
-            "Source": "main",
-            "Info": ""
-        },
-        {
-            "Updated": "2023-10-02T12:25:59.6374947+03:00",
-            "Name": "fastfetch",
-            "Version": "2.0.5",
-            "Source": "main",
-            "Info": ""
-        },
-        {
-            "Updated": "2023-09-24T10:32:26.1543115+03:00",
-            "Name": "fd",
-            "Version": "8.7.0",
-            "Source": "main",
-            "Info": ""
-        },
-        {
-            "Updated": "2023-09-24T10:32:43.7300965+03:00",
-            "Name": "frp",
-            "Version": "0.51.3",
-            "Source": "main",
-            "Info": ""
-        },
-        {
-            "Updated": "2023-09-24T10:32:47.389724+03:00",
-            "Name": "fx",
-            "Version": "30.0.3",
-            "Source": "main",
-            "Info": ""
-        },
-        {
-            "Updated": "2023-09-20T19:00:41.1333295+03:00",
-            "Name": "fzf",
-            "Version": "0.42.0",
-            "Source": "main",
-            "Info": ""
-        },
-        {
-            "Updated": "2023-09-17T21:50:08.3396198+03:00",
-            "Name": "gh",
-            "Version": "2.34.0",
-            "Source": "main",
-            "Info": ""
-        },
-        {
-            "Updated": "2024-03-14T14:57:32.0139809+03:00",
-            "Name": "golly",
-            "Version": "4.2",
-            "Source": "games",
-            "Info": ""
-        },
-        {
-            "Updated": "2023-10-08T20:28:37.4389438+03:00",
-            "Name": "gpg4win",
-            "Version": "4.2.0",
-            "Source": "extras",
-            "Info": ""
-        },
-        {
-            "Updated": "2023-12-22T16:34:56.7467465+03:00",
-            "Name": "gsudo",
-            "Version": "2.4.2",
-            "Source": "main",
-            "Info": ""
-        },
-        {
-            "Updated": "2023-09-25T10:06:07.529458+03:00",
-            "Name": "handbrake",
-            "Version": "1.6.1",
-            "Source": "extras",
-            "Info": ""
-        },
-        {
-            "Updated": "2024-02-02T12:35:09.0829126+03:00",
-            "Name": "imhex",
-            "Version": "1.32.2",
-            "Source": "extras",
-            "Info": ""
-        },
-        {
-            "Updated": "2023-09-02T11:43:26.7825544+03:00",
-            "Name": "innounp",
-            "Version": "0.50",
-            "Source": "main",
-            "Info": ""
-        },
-        {
-            "Updated": "2023-09-16T11:27:29.8756691+03:00",
-            "Name": "iperf3",
-            "Version": "3.1.3",
-            "Source": "main",
-            "Info": ""
-        },
-        {
-            "Updated": "2023-09-24T10:32:55.5148174+03:00",
-            "Name": "jq",
-            "Version": "1.7",
-            "Source": "main",
-            "Info": ""
-        },
-        {
-            "Updated": "2023-10-06T11:02:35.9349065+03:00",
-            "Name": "kitty",
-            "Version": "0.76.1.13",
-            "Source": "extras",
-            "Info": ""
-        },
-        {
-            "Updated": "2024-07-15T20:56:33.8501191+03:00",
-            "Name": "kryptor",
-            "Version": "4.1.0",
-            "Source": "extras",
-            "Info": ""
-        },
-        {
-            "Updated": "2023-07-09T21:59:21.5674181+03:00",
-            "Name": "lazygit",
-            "Version": "0.38.2",
-            "Source": "extras",
-            "Info": ""
-        },
-        {
-            "Updated": "2024-07-10T21:15:09.2872293+03:00",
-            "Name": "links",
-            "Version": "2.29",
-            "Source": "main",
-            "Info": ""
-        },
-        {
-            "Updated": "2024-03-07T11:39:26.0064757+03:00",
-            "Name": "localsend",
-            "Version": "1.14.0",
-            "Source": "extras",
-            "Info": ""
-        },
-        {
-            "Updated": "2023-09-24T10:33:00.5220787+03:00",
-            "Name": "lsd",
-            "Version": "1.0.0",
-            "Source": "main",
-            "Info": ""
-        },
-        {
-            "Updated": "2023-09-24T10:33:14.9912543+03:00",
-            "Name": "magic-wormhole",
-            "Version": "0.12.0",
-            "Source": "main",
-            "Info": ""
-        },
-        {
-            "Updated": "2023-09-24T10:33:18.9438302+03:00",
-            "Name": "micro",
-            "Version": "2.0.12",
-            "Source": "main",
-            "Info": ""
-        },
-        {
-            "Updated": "2023-09-24T10:40:04.489606+03:00",
-            "Name": "miller",
-            "Version": "6.9.0",
-            "Source": "main",
-            "Info": ""
-        },
-        {
-            "Updated": "2023-09-24T10:33:24.2027988+03:00",
-            "Name": "miniserve",
-            "Version": "0.24.0",
-            "Source": "main",
-            "Info": ""
-        },
-        {
-            "Updated": "2023-09-24T10:33:27.5121749+03:00",
-            "Name": "mkcert",
-            "Version": "1.4.4",
-            "Source": "extras",
-            "Info": ""
-        },
-        {
-            "Updated": "2023-07-08T18:08:01.3657538+03:00",
-            "Name": "netcat",
-            "Version": "1.12",
-            "Source": "main",
-            "Info": ""
-        },
-        {
-            "Updated": "2023-07-11T16:15:30.5572971+03:00",
-            "Name": "networkmanager",
-            "Version": "2023.6.27.1",
-            "Source": "extras",
-            "Info": ""
-        },
-        {
-            "Updated": "2023-09-24T10:33:37.1297633+03:00",
-            "Name": "ngrok",
-            "Version": "3.3.4",
-            "Source": "main",
-            "Info": ""
-        },
-        {
-            "Updated": "2023-09-24T10:33:42.6991025+03:00",
-            "Name": "onefetch",
-            "Version": "2.18.1",
-            "Source": "extras",
-            "Info": ""
-        },
-        {
-            "Updated": "2023-10-04T15:10:28.3290431+03:00",
-            "Name": "openssh",
-            "Version": "9.2.2.0p1",
-            "Source": "main",
-            "Info": ""
-        },
-        {
-            "Updated": "2023-09-24T10:33:44.8379549+03:00",
-            "Name": "pastel",
-            "Version": "0.9.0",
-            "Source": "main",
-            "Info": ""
-        },
-        {
-            "Updated": "2023-07-11T16:40:40.2349014+03:00",
-            "Name": "putty",
-            "Version": "0.78",
-            "Source": "extras",
-            "Info": ""
-        },
-        {
-            "Updated": "2024-03-12T11:21:50.1973665+03:00",
-            "Name": "qalculate",
-            "Version": "5.0.0",
-            "Source": "extras",
-            "Info": ""
-        },
-        {
-            "Updated": "2023-09-24T10:33:51.3978723+03:00",
-            "Name": "qrcp",
-            "Version": "0.10.1",
-            "Source": "main",
-            "Info": ""
-        },
-        {
-            "Updated": "2023-10-03T15:17:27.6956677+03:00",
-            "Name": "qrencode",
-            "Version": "4.1.1-2",
-            "Source": "main",
-            "Info": ""
-        },
-        {
-            "Updated": "2023-09-24T10:33:53.6003262+03:00",
-            "Name": "rathole",
-            "Version": "0.4.8",
-            "Source": "main",
-            "Info": ""
-        },
-        {
-            "Updated": "2023-09-24T10:34:07.6396282+03:00",
-            "Name": "ripgrep",
-            "Version": "13.0.0",
-            "Source": "main",
-            "Info": ""
-        },
-        {
-            "Updated": "2023-07-09T10:50:08.1931036+03:00",
-            "Name": "scoop-completion",
-            "Version": "0.2.4",
-            "Source": "extras",
-            "Info": ""
-        },
-        {
-            "Updated": "2023-09-02T18:14:30.2453106+03:00",
-            "Name": "scrcpy",
-            "Version": "2.1.1",
-            "Source": "main",
-            "Info": ""
-        },
-        {
-            "Updated": "2023-09-29T10:41:23.9347725+03:00",
-            "Name": "sd",
-            "Version": "0.7.5",
-            "Source": "main",
-            "Info": ""
-        },
-        {
-            "Updated": "2023-09-24T10:34:23.3928125+03:00",
-            "Name": "speedtest-cli",
-            "Version": "1.2.0",
-            "Source": "main",
-            "Info": ""
-        },
-        {
-            "Updated": "2023-07-10T11:11:12.5881028+03:00",
-            "Name": "ugrep",
-            "Version": "3.12.2",
-            "Source": "main",
-            "Info": ""
-        },
-        {
-            "Updated": "2023-08-26T16:01:31.5233773+03:00",
-            "Name": "upx",
-            "Version": "4.1.0",
-            "Source": "main",
-            "Info": ""
-        },
-        {
-            "Updated": "2023-09-24T10:46:58.4430174+03:00",
-            "Name": "vim",
-            "Version": "9.0",
-            "Source": "main",
-            "Info": ""
-        },
-        {
-            "Updated": "2023-10-06T11:44:40.097038+03:00",
-            "Name": "windterm",
-            "Version": "2.5.0",
-            "Source": "extras",
-            "Info": ""
-        },
-        {
-            "Updated": "2023-09-24T10:34:27.9985921+03:00",
-            "Name": "xh",
-            "Version": "0.18.0",
-            "Source": "main",
-            "Info": ""
-        },
-        {
-            "Updated": "2023-09-24T10:34:30.9834762+03:00",
-            "Name": "xsv",
-            "Version": "0.13.0",
-            "Source": "main",
-            "Info": ""
-        },
-        {
-            "Updated": "2023-09-24T10:34:42.0595035+03:00",
-            "Name": "yq",
-            "Version": "4.35.1",
-            "Source": "main",
-            "Info": ""
-        },
-        {
-            "Updated": "2024-01-15T16:25:16.8922104+03:00",
-            "Name": "yt-dlp",
-            "Version": "2023.12.30",
-            "Source": "main",
-            "Info": ""
-        },
-        {
-            "Updated": "2023-10-03T15:17:11.2742253+03:00",
-            "Name": "zstd",
-            "Version": "1.5.5",
-            "Source": "main",
-            "Info": ""
-        }
-    ],
     "buckets": [
         {
             "Name": "main",
             "Source": "https://github.com/ScoopInstaller/Main.git",
-            "Updated": "2024-07-15T19:28:45+03:00",
-            "Manifests": 1333
+            "Updated": "2024-07-28T19:28:28+03:00",
+            "Manifests": 1337
         },
         {
             "Name": "extras",
             "Source": "https://github.com/ScoopInstaller/Extras",
-            "Updated": "2024-07-15T19:31:58+03:00",
-            "Manifests": 2044
+            "Updated": "2024-07-28T19:30:46+03:00",
+            "Manifests": 2053
         },
         {
             "Name": "nonportable",
             "Source": "https://github.com/ScoopInstaller/Nonportable",
-            "Updated": "2024-07-15T19:39:22+03:00",
+            "Updated": "2024-07-28T19:35:33+03:00",
             "Manifests": 127
         },
         {
             "Name": "games",
             "Source": "https://github.com/Calinou/scoop-games",
-            "Updated": "2024-07-15T19:27:39+03:00",
-            "Manifests": 310
+            "Updated": "2024-07-28T19:05:46+03:00",
+            "Manifests": 312
+        }
+    ],
+    "apps": [
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2023-07-13T19:20:36.8456669+03:00",
+            "Name": "7zip",
+            "Version": "23.01"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Updated": "2024-07-15T11:31:40.2618012+03:00",
+            "Name": "age",
+            "Version": "1.2.0"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Updated": "2024-07-17T13:41:44.9716708+03:00",
+            "Name": "alacritty",
+            "Version": "0.13.2"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2023-09-24T10:31:23.5799089+03:00",
+            "Name": "aria2",
+            "Version": "1.36.0-1"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2023-09-24T10:31:28.0453583+03:00",
+            "Name": "ast-grep",
+            "Version": "0.12.1"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2023-09-24T10:31:32.1327297+03:00",
+            "Name": "bat",
+            "Version": "0.23.0"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2023-09-24T10:31:56.8688322+03:00",
+            "Name": "caddy",
+            "Version": "2.7.4"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Updated": "2023-09-09T15:28:14.825683+03:00",
+            "Name": "chk",
+            "Version": "5.00"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2023-09-05T09:28:12.2786902+03:00",
+            "Name": "cloc",
+            "Version": "1.98"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2023-09-24T10:32:03.4798369+03:00",
+            "Name": "croc",
+            "Version": "9.6.5"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2023-09-24T10:32:13.2492779+03:00",
+            "Name": "delta",
+            "Version": "0.16.5"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2024-02-10T17:41:31.8001195+03:00",
+            "Name": "dog",
+            "Version": "0.1.0"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2023-09-24T10:32:17.4089536+03:00",
+            "Name": "dufs",
+            "Version": "0.36.0"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2023-09-24T10:32:21.0768035+03:00",
+            "Name": "ethr",
+            "Version": "1.0.0"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2023-09-24T10:32:23.4561242+03:00",
+            "Name": "eza",
+            "Version": "0.13.0"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2023-10-02T12:25:59.6374947+03:00",
+            "Name": "fastfetch",
+            "Version": "2.0.5"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2023-09-24T10:32:26.1543115+03:00",
+            "Name": "fd",
+            "Version": "8.7.0"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2023-09-24T10:32:43.7300965+03:00",
+            "Name": "frp",
+            "Version": "0.51.3"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2023-09-24T10:32:47.389724+03:00",
+            "Name": "fx",
+            "Version": "30.0.3"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2023-09-20T19:00:41.1333295+03:00",
+            "Name": "fzf",
+            "Version": "0.42.0"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2023-09-17T21:50:08.3396198+03:00",
+            "Name": "gh",
+            "Version": "2.34.0"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2024-07-17T16:26:33.7949983+03:00",
+            "Name": "gnuplot",
+            "Version": "6.0.1"
+        },
+        {
+            "Info": "",
+            "Source": "games",
+            "Updated": "2024-03-14T14:57:32.0139809+03:00",
+            "Name": "golly",
+            "Version": "4.2"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Updated": "2023-10-08T20:28:37.4389438+03:00",
+            "Name": "gpg4win",
+            "Version": "4.2.0"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2023-12-22T16:34:56.7467465+03:00",
+            "Name": "gsudo",
+            "Version": "2.4.2"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Updated": "2023-09-25T10:06:07.529458+03:00",
+            "Name": "handbrake",
+            "Version": "1.6.1"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Updated": "2024-02-02T12:35:09.0829126+03:00",
+            "Name": "imhex",
+            "Version": "1.32.2"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2023-09-02T11:43:26.7825544+03:00",
+            "Name": "innounp",
+            "Version": "0.50"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2023-09-16T11:27:29.8756691+03:00",
+            "Name": "iperf3",
+            "Version": "3.1.3"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2023-09-24T10:32:55.5148174+03:00",
+            "Name": "jq",
+            "Version": "1.7"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Updated": "2023-10-06T11:02:35.9349065+03:00",
+            "Name": "kitty",
+            "Version": "0.76.1.13"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Updated": "2023-07-09T21:59:21.5674181+03:00",
+            "Name": "lazygit",
+            "Version": "0.38.2"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2024-07-10T21:15:09.2872293+03:00",
+            "Name": "links",
+            "Version": "2.29"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Updated": "2024-03-07T11:39:26.0064757+03:00",
+            "Name": "localsend",
+            "Version": "1.14.0"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2023-09-24T10:33:00.5220787+03:00",
+            "Name": "lsd",
+            "Version": "1.0.0"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2023-09-24T10:33:14.9912543+03:00",
+            "Name": "magic-wormhole",
+            "Version": "0.12.0"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2023-09-24T10:33:18.9438302+03:00",
+            "Name": "micro",
+            "Version": "2.0.12"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2023-09-24T10:40:04.489606+03:00",
+            "Name": "miller",
+            "Version": "6.9.0"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2023-09-24T10:33:24.2027988+03:00",
+            "Name": "miniserve",
+            "Version": "0.24.0"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Updated": "2023-09-24T10:33:27.5121749+03:00",
+            "Name": "mkcert",
+            "Version": "1.4.4"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2023-07-08T18:08:01.3657538+03:00",
+            "Name": "netcat",
+            "Version": "1.12"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Updated": "2024-07-28T21:38:00.9065012+03:00",
+            "Name": "networkmanager",
+            "Version": "2024.6.15.0"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2023-09-24T10:33:37.1297633+03:00",
+            "Name": "ngrok",
+            "Version": "3.3.4"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Updated": "2023-09-24T10:33:42.6991025+03:00",
+            "Name": "onefetch",
+            "Version": "2.18.1"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2023-10-04T15:10:28.3290431+03:00",
+            "Name": "openssh",
+            "Version": "9.2.2.0p1"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2023-09-24T10:33:44.8379549+03:00",
+            "Name": "pastel",
+            "Version": "0.9.0"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Updated": "2023-07-11T16:40:40.2349014+03:00",
+            "Name": "putty",
+            "Version": "0.78"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Updated": "2024-07-17T16:29:20.0958195+03:00",
+            "Name": "qalculate",
+            "Version": "5.2.0"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2023-09-24T10:33:51.3978723+03:00",
+            "Name": "qrcp",
+            "Version": "0.10.1"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2023-10-03T15:17:27.6956677+03:00",
+            "Name": "qrencode",
+            "Version": "4.1.1-2"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2023-09-24T10:33:53.6003262+03:00",
+            "Name": "rathole",
+            "Version": "0.4.8"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2023-09-24T10:34:07.6396282+03:00",
+            "Name": "ripgrep",
+            "Version": "13.0.0"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Updated": "2023-07-09T10:50:08.1931036+03:00",
+            "Name": "scoop-completion",
+            "Version": "0.2.4"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2023-09-02T18:14:30.2453106+03:00",
+            "Name": "scrcpy",
+            "Version": "2.1.1"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2023-09-29T10:41:23.9347725+03:00",
+            "Name": "sd",
+            "Version": "0.7.5"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2023-09-24T10:34:23.3928125+03:00",
+            "Name": "speedtest-cli",
+            "Version": "1.2.0"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2023-07-10T11:11:12.5881028+03:00",
+            "Name": "ugrep",
+            "Version": "3.12.2"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2023-08-26T16:01:31.5233773+03:00",
+            "Name": "upx",
+            "Version": "4.1.0"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2023-09-24T10:46:58.4430174+03:00",
+            "Name": "vim",
+            "Version": "9.0"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Updated": "2023-10-06T11:44:40.097038+03:00",
+            "Name": "windterm",
+            "Version": "2.5.0"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2023-09-24T10:34:27.9985921+03:00",
+            "Name": "xh",
+            "Version": "0.18.0"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2023-09-24T10:34:30.9834762+03:00",
+            "Name": "xsv",
+            "Version": "0.13.0"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2023-09-24T10:34:42.0595035+03:00",
+            "Name": "yq",
+            "Version": "4.35.1"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2024-01-15T16:25:16.8922104+03:00",
+            "Name": "yt-dlp",
+            "Version": "2023.12.30"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2023-10-03T15:17:11.2742253+03:00",
+            "Name": "zstd",
+            "Version": "1.5.5"
         }
     ]
 }
