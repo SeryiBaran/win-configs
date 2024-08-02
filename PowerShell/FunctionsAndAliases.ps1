@@ -67,17 +67,17 @@ function ds {
 
 function l {
   #lsd -la --header --blocks "size,date,name" --group-directories-first $args
-  eza -Flah -s type --group-directories-first $args
+  eza -lah -s type --group-directories-first $args
 }
 
 function ll {
   #lsd -la --header --blocks "size,date,name" --group-directories-first $args
-  eza -Fah -s type --group-directories-first $args
+  eza -ah -s type --group-directories-first $args
 }
 
 function t {
   #lsd -a --tree -I "{node_modules,.git}" --group-directories-first $args
-  eza -Flah -s type --group-directories-first --tree --ignore-glob ".git|node_modules|.parcel-cache|.cache" $args
+  eza -lah -s type --group-directories-first --tree --ignore-glob ".git|node_modules|.parcel-cache|.cache" $args
 }
 
 function m {
@@ -264,7 +264,8 @@ function Backup-WinFetchConfig {
 }
 
 function Backup-WindowsTerminalConfig {
-  Copy-Item "$HOME\AppData\Local\Microsoft\Windows Terminal\settings.json" $DotfilesDir\windowsTerminalSettings.json
+  #Copy-Item "$HOME\AppData\Local\Microsoft\Windows Terminal\settings.json" $DotfilesDir\windowsTerminalSettings.json
+  Copy-Item "$HOME\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json" $DotfilesDir\windowsTerminalSettings.json
 }
 
 function Backup-GITConfig {
@@ -558,4 +559,10 @@ function Backup-AllConfigsAAA {
   Backup-AlacrittyConfig
   Backup-ConEmuConfig
   Backup-ScoopList
+}
+
+function Start-MyWSLAlpine {
+  C:\Alpine\Alpine.exe
+  # And after...
+  wsl --shutdown
 }

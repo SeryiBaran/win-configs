@@ -18,6 +18,15 @@
             "command": 
             {
                 "action": "splitPane",
+                "split": "right",
+                "splitMode": "duplicate"
+            },
+            "keys": "alt+shift+plus"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane",
                 "split": "down",
                 "splitMode": "duplicate"
             },
@@ -35,27 +44,12 @@
                 "splitMode": "duplicate"
             },
             "keys": "alt+shift+d"
-        },
-        {
-            "command": 
-            {
-                "action": "splitPane",
-                "split": "right",
-                "splitMode": "duplicate"
-            },
-            "keys": "alt+shift+plus"
         }
     ],
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
     "experimental.rendering.software": false,
-    "newTabMenu": 
-    [
-        {
-            "type": "remainingProfiles"
-        }
-    ],
     "profiles": 
     {
         "defaults": 
@@ -66,14 +60,13 @@
             "experimental.retroTerminalEffect": false,
             "font": 
             {
-                "face": "CozetteVector",
-                "size": 10.0,
+                "face": "Cascadia Code",
+                "size": 10,
                 "weight": "normal"
             },
             "opacity": 100,
             "startingDirectory": null,
-            "useAcrylic": false,
-            "useAtlasEngine": false
+            "useAcrylic": false
         },
         "list": 
         [
@@ -110,12 +103,23 @@
             },
             {
                 "commandline": "\"C:\\Program Files\\PowerShell\\7\\pwsh.exe\"",
-                "elevate": true,
                 "guid": "{5460cdb1-5f7e-4645-8107-f44cc28df707}",
                 "hidden": false,
                 "icon": "ms-appx:///ProfileIcons/pwsh.png",
                 "name": "PowerShell (Admin)",
                 "startingDirectory": "%USERPROFILE%"
+            },
+            {
+                "guid": "{16208362-94fc-5b1f-a491-5b2624d5ab56}",
+                "hidden": true,
+                "name": "Visual Studio Debug Console",
+                "source": "VSDebugConsole"
+            },
+            {
+                "guid": "{1777cdf0-b2c4-5a63-a204-eb60f349ea7c}",
+                "hidden": false,
+                "name": "Alpine",
+                "source": "Windows.Terminal.Wsl"
             }
         ]
     },
@@ -398,6 +402,5 @@
             "yellow": "#808000"
         }
     ],
-    "theme": "dark",
-    "themes": []
+    "theme": "dark"
 }

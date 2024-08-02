@@ -1,55 +1,28 @@
 C:\Program Files\PowerShell\7
-E:\PROGRAMS\VMWARE\bin\
-E:\PROGRAMS\python_3_10_10\Scripts\
-E:\PROGRAMS\python_3_10_10\
-C:\Program Files\Eclipse Adoptium\jre-21.0.1.12-hotspot\bin
-C:\Users\ivan\scoop\apps\openssh\current
+C:\Program Files\WindowsApps\Microsoft.WindowsTerminal_1.12.10983.0_x64__8wekyb3d8bbwe
+C:\Program Files\Eclipse Adoptium\jdk-21.0.2.13-hotspot\bin
+C:\Program Files\OpenSSH\
+C:\python_3.10.10\Scripts\
+C:\python_3.10.10\
+C:\Program Files (x86)\VMware\VMware Workstation\bin\
 C:\Windows\system32
 C:\Windows
 C:\Windows\System32\Wbem
 C:\Windows\System32\WindowsPowerShell\v1.0\
-C:\Program Files\Git\cmd
-C:\Program Files\TortoiseGit\bin
-C:\Users\ivan\AppData\Roaming\nvm
-C:\Program Files\nodejs
 C:\Windows\System32\OpenSSH\
-C:\Program Files\WindowsPowerShell\Scripts
-C:\ProgramData\chocolatey\bin
-C:\Program Files\WireGuard\
-C:\Users\ivan\scoop\apps\gpg4win\current\Gpg4win\..\GnuPG\bin
+C:\Program Files\PuTTY\
+C:\Program Files\PowerShell\7\
 C:\Users\ivan\AppData\Roaming\nvm
 C:\Program Files\nodejs
-C:\Program Files\Calibre2\
-C:\Program Files\PowerShell\7\
+C:\Program Files (x86)\Gpg4win\..\GnuPG\bin
+C:\Program Files\Git\cmd
 C:\Program Files\dotnet\
+C:\Program Files\Calibre2\
+C:\Users\ivan\scoop\apps\qemu\current
 C:\Users\ivan\scoop\apps\gsudo\current
-C:\Users\ivan\scoop\apps\gpg4win\current\GnuPG\bin
-C:\Users\ivan\scoop\apps\gpg4win\current\Gpg4win\bin
-C:\Users\ivan\AppData\Local\Volta\bin
 C:\Users\ivan\scoop\shims
 C:\Users\ivan\AppData\Local\Microsoft\WindowsApps
-C:\pathTools
-C:\Program Files\qemu
+C:\Users\ivan\AppData\Roaming\nvm
+C:\Program Files\nodejs
+C:\Users\ivan\.dotnet\tools
 C:\Users\ivan\AppData\Local\Programs\Microsoft VS Code\bin
-E:\jdk-17.0.6.10-hotspot\bin
-C:\Users\ivan\AppData\Local\Programs\Hyper\resources\bin
-C:\Users\ivan\AppData\Roaming\nvm
-C:\Program Files\nodejs
-E:\OSPanel\modules\php\PHP_8.1
-C:\Users\ivan\AppData\Local\ComposerSetup\bin
-C:\Users\ivan\AppData\Roaming\Composer\vendor\bin
-C:\Program Files\WindowsPowerShell\Scripts\
-C:\Users\ivan\Documents\PowerShell\Scripts
-C:\Users\ivan\.dotnet\tools
-C:\WindowsTerminal
-C:\Users\ivan\.platformio\penv\Scripts
-C:\Users\ivan\.dotnet\tools
-E:\PROGRAMS\VISUAL_STUDIO\vcpkg
-C:\Program Files\JetBrains\WebStorm 2023.2.2\bin
-C:\Users\ivan\AppData\Roaming\nvm
-C:\Program Files\nodejs
-e:\PROGRAMS\tcc\
-e:\PROGRAMS\PASCALABCNET\PascalABC.NET
-C:\Program Files (x86)\NSIS
-C:\Program Files (x86)\sb_ffmpeg\bin
-C:\Users\ivan\.dotnet\tools
