@@ -23,4 +23,4 @@
 [commit]
 	gpgsign = true
 [gpg]
-	program = c:\\Users\\ivan\\scoop\\apps\\gpg4win\\current\\GnuPG\\bin\\gpg.exe
+	program = C:\\Program Files (x86)\\GnuPG\\bin\\gpg.exe

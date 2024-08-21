@@ -1,5 +1,4 @@
 C:\Program Files\PowerShell\7
-C:\Program Files\WindowsApps\Microsoft.WindowsTerminal_1.12.10983.0_x64__8wekyb3d8bbwe
 C:\Program Files\Eclipse Adoptium\jdk-21.0.2.13-hotspot\bin
 C:\Program Files\OpenSSH\
 C:\python_3.10.10\Scripts\
@@ -18,11 +17,10 @@ C:\Program Files (x86)\Gpg4win\..\GnuPG\bin
 C:\Program Files\Git\cmd
 C:\Program Files\dotnet\
 C:\Program Files\Calibre2\
-C:\Users\ivan\scoop\apps\qemu\current
+C:\Users\ivan\AppData\Local\UniGetUI\Chocolatey\bin
 C:\Users\ivan\scoop\apps\gsudo\current
 C:\Users\ivan\scoop\shims
 C:\Users\ivan\AppData\Local\Microsoft\WindowsApps
-C:\Users\ivan\AppData\Roaming\nvm
-C:\Program Files\nodejs
 C:\Users\ivan\.dotnet\tools
 C:\Users\ivan\AppData\Local\Programs\Microsoft VS Code\bin
+C:\pathTools

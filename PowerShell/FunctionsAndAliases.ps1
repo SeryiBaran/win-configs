@@ -217,6 +217,10 @@ function dy {
   $input | yt-dlp --compat-option filename-sanitization $args
 }
 
+function dc {
+  & "C:\\Program Files\\Double Commander\\doublecmd.EXE" -path $PWD $args
+}
+
 function tc {
   & "C:\\Program Files\\totalcmd\\TOTALCMD64.EXE" \L $PWD $args
 }
@@ -562,7 +566,14 @@ function Backup-AllConfigsAAA {
 }
 
 function Start-MyWSLAlpine {
-  C:\Alpine\Alpine.exe
-  # And after...
+  C:\Arch\Arch.exe
+}
+
+function Stop-MyWSLAlpine {
   wsl --shutdown
+}
+
+function Quick-MyWSLAlpine {
+  Start-MyWSLAlpine
+  Stop-MyWSLAlpine
 }
