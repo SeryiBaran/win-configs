@@ -167,10 +167,13 @@ function tb {
   $input | nc termbin.com 9999
 }
 
+# qalc -u8 "3pi^2"
+# https://github.com/Qalculate/libqalculate/issues/262
+# https://github.com/Qalculate/libqalculate/issues/681
 function qalc {
   #chcp 866
-  qalc.exe -t $args
-  #chcp 65001
+  & 'C:\Program Files\Qalculate\qalc.exe' $args
+  #chcp ($OutputEncoding.CodePage)
 }
 
 function npp {
@@ -565,15 +568,15 @@ function Backup-AllConfigsAAA {
   Backup-ScoopList
 }
 
-function Start-MyWSLAlpine {
+function Start-MyWSLArch {
   C:\Arch\Arch.exe
 }
 
-function Stop-MyWSLAlpine {
+function Stop-MyWSLArch {
   wsl --shutdown
 }
 
-function Quick-MyWSLAlpine {
+function Quick-MyWSLArch {
   Start-MyWSLAlpine
   Stop-MyWSLAlpine
 }

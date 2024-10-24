@@ -6,9 +6,11 @@
         {
             "command": 
             {
-                "action": "copy",
-                "singleLine": false
-            }
+                "action": "splitPane",
+                "split": "right",
+                "splitMode": "duplicate"
+            },
+            "keys": "alt+shift+plus"
         },
         {
             "command": "unbound",
@@ -17,11 +19,9 @@
         {
             "command": 
             {
-                "action": "splitPane",
-                "split": "right",
-                "splitMode": "duplicate"
-            },
-            "keys": "alt+shift+plus"
+                "action": "copy",
+                "singleLine": false
+            }
         },
         {
             "command": 
@@ -116,9 +116,9 @@
                 "source": "VSDebugConsole"
             },
             {
-                "guid": "{1777cdf0-b2c4-5a63-a204-eb60f349ea7c}",
+                "guid": "{a5a97cb8-8961-5535-816d-772efe0c6a3f}",
                 "hidden": false,
-                "name": "Alpine",
+                "name": "Arch",
                 "source": "Windows.Terminal.Wsl"
             }
         ]
