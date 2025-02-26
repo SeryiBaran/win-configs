@@ -152,15 +152,11 @@ function Get-IP {
     $Interface
   )
 
-  $command_args = @{
-    AddressFamily = "IPv4"
-  }
-
   if ($Interface) {
     $command_args.InterfaceAlias = $Interface
   }
 
-  Get-NetIPAddress @command_args | Select-Object -Property InterfaceAlias, IPAddress
+  Get-NetIPAddress | Select-Object -Property InterfaceAlias, IPAddress, AddressFamily
 }
 
 function tb {
