@@ -116,6 +116,14 @@ function qrpng {
   $input | qrencode -o qr.png -s 6 $args
 }
 
+function Create-QRCodeSmall {
+  zint -b 58 --eci=26 -d $args --scalexdimdp=1,1 --secure=2 --vwhitesp=2 -w 2
+}
+
+function Create-QRCodeStandard {
+  zint -b 58 --eci=26 -d $args --scalexdimdp=8,1 --secure=2 --vwhitesp=2 -w 2
+}
+
 function Clear-MyHistory {
   Write-Output "" > (Get-PSReadlineOption).HistorySavePath
 }
@@ -221,11 +229,15 @@ function dc {
 }
 
 function tc {
-  & "C:\\Program Files\\totalcmd\\TOTALCMD64.EXE" \L $PWD $args
+  & "C:\\TCMI\\TOTALCMD64.EXE" \L $PWD $args
 }
 
 function far {
   & "c:\\Program Files\\Far Manager\\Far.exe" $PWD $args
+}
+
+function gimp {
+  & "e:\\PROGRAMS\\GIMP 3\\bin\\gimp.exe" $args
 }
 
 function Get-DNSInfo {
@@ -575,4 +587,8 @@ function Stop-MyWSLArch {
 function Quick-MyWSLArch {
   Start-MyWSLAlpine
   Stop-MyWSLAlpine
+}
+
+function tach {
+  New-Item $args
 }

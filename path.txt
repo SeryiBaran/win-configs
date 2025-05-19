@@ -12,6 +12,11 @@ C:\Program Files (x86)\Gpg4win\..\GnuPG\bin
 C:\Users\ivan\AppData\Roaming\nvm
 C:\Program Files\nodejs
 C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common
+C:\Program Files\Calibre2\
+C:\Program Files\Go\bin
+C:\Program Files\Git LFS
+C:\Users\ivan\.cargo\bin
+C:\Users\ivan\AppData\Local\pnpm
 C:\Users\ivan\AppData\Local\Programs\Python\Python310\Scripts\
 C:\Users\ivan\AppData\Local\Programs\Python\Python310\
 C:\Users\ivan\scoop\apps\gsudo\current
@@ -24,3 +29,7 @@ C:\Users\ivan\AppData\Local\Programs\Microsoft VS Code\bin
 C:\Program Files (x86)\PascalABC.NET
 C:\pathTools
 C:\Program Files (x86)\Nmap
+C:\Users\ivan\go\bin
+C:\Program Files\JetBrains\WebStorm 2025.1\bin
+
+E:\files\qr\zint-2.13.0
