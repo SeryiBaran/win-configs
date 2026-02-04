@@ -16,6 +16,8 @@ $DotfilesDir = "E:\files\a_important\PROGRAMS"
 $env:DOTNET_CLI_UI_LANGUAGE = "en-us"
 $env:PSModulePath = "$MyModulesDir;C:\Users\ivan\Documents\PowerShell\Modules;C:\Program Files\PowerShell\Modules;c:\program files\powershell\7\Modules;C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules"
 
+$env:Path = "C:\Users\ivan\.local\bin;$env:Path"
+
 Remove-Item Alias:ni -Force -ErrorAction Ignore
 
 $GeneralProfile = $PROFILE.CurrentUserAllHosts

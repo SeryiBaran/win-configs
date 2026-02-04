@@ -1,15 +1,17 @@
 C:\Program Files\nodejs -> .\
-+-- @vscode/vsce@2.22.0
-+-- browser-sync@3.0.2
-+-- corepack@0.23.0
-+-- generator-code@1.8.2
-+-- giget@1.2.1
-+-- nanoid@5.0.4
-+-- nodemon@3.0.3
-+-- npkill@0.11.3
-+-- npm@10.2.4
-+-- pnpm@8.14.1
-+-- serve@14.2.1
-+-- taze@0.13.1
-`-- yo@5.0.0
++-- @angular/cli@19.2.9
++-- @antfu/ni@24.3.0
++-- @antfu/nip@0.0.0
++-- @nestjs/cli@11.0.5
++-- bem-tools-core@0.0.3
++-- browser-sync@3.0.4
++-- corepack@0.31.0
++-- giget@2.0.0
++-- gulp@5.0.1
++-- mwoffliner@
++-- npm@10.9.2
++-- pm2@6.0.5
++-- pnpm@10.26.0
++-- staticrypt@3.5.4
+`-- yarn@1.22.22
 

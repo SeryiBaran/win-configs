@@ -229,7 +229,7 @@ function dc {
 }
 
 function tc {
-  & "C:\\TCMI\\TOTALCMD64.EXE" \L $PWD $args
+  & "C:\\TCPU75\\TOTALCMD64.EXE" \L $PWD $args
 }
 
 function far {
@@ -238,6 +238,14 @@ function far {
 
 function gimp {
   & "e:\\PROGRAMS\\GIMP 3\\bin\\gimp.exe" $args
+}
+
+function gone {
+  git clone --recurse-submodules -j8 $args
+}
+
+function 7zadel {
+  7z a -sdel -mmt2 -mx5 $args .\$args
 }
 
 function Get-DNSInfo {

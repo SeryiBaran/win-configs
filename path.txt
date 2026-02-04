@@ -1,12 +1,17 @@
+C:\Users\ivan\.local\bin
 C:\Program Files\PowerShell\7
-C:\Program Files\Eclipse Adoptium\jdk-21.0.5.11-hotspot\bin
 C:\Program Files\OpenSSH\
+E:\PROGRAMS\Embarcadero\Studio\23.0\bin64
+C:\Users\Public\Documents\Embarcadero\Studio\23.0\Bpl\Win64
+C:\Program Files\Common Files\Oracle\Java\javapath
+C:\Python313\Scripts\
+C:\Python313\
+C:\Program Files\Eclipse Adoptium\jdk-21.0.5.11-hotspot\bin
 C:\Windows\system32
 C:\Windows
 C:\Windows\System32\Wbem
 C:\Windows\System32\WindowsPowerShell\v1.0\
 C:\Program Files\PowerShell\7\
-C:\Program Files\Git\cmd
 C:\Program Files\dotnet\
 C:\Program Files (x86)\Gpg4win\..\GnuPG\bin
 C:\Users\ivan\AppData\Roaming\nvm
@@ -15,10 +20,14 @@ C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common
 C:\Program Files\Calibre2\
 C:\Program Files\Go\bin
 C:\Program Files\Git LFS
-C:\Users\ivan\.cargo\bin
+C:\Program Files (x86)\ZeroTier\One\
+E:\PROGRAMS\Embarcadero\Studio\23.0\bin
+C:\Users\Public\Documents\Embarcadero\Studio\23.0\Bpl
+C:\Program Files\Git\cmd
+C:\Strawberry\perl\bin
+C:\Program Files\WinMerge
+C:\Users\ivan\.local\bin
 C:\Users\ivan\AppData\Local\pnpm
-C:\Users\ivan\AppData\Local\Programs\Python\Python310\Scripts\
-C:\Users\ivan\AppData\Local\Programs\Python\Python310\
 C:\Users\ivan\scoop\apps\gsudo\current
 C:\Users\ivan\scoop\shims
 C:\Users\ivan\AppData\Local\Microsoft\WindowsApps
@@ -33,3 +42,11 @@ C:\Users\ivan\go\bin
 C:\Program Files\JetBrains\WebStorm 2025.1\bin
 
 E:\files\qr\zint-2.13.0
+C:\Python313
+E:\PROGRAMS\D\dmd2\windows\bin64
+C:\Users\ivan\.bun\bin
+C:\Users\ivan\AppData\Roaming\Python\Python313\Scripts
+C:\Users\ivan\AppData\Local\Programs\MiKTeX\miktex\bin\x64\
+C:\Users\ivan\AppData\Local\Programs\Zed\bin
+C:\Python313\Scripts
+

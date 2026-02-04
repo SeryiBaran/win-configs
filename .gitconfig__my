@@ -24,3 +24,21 @@
 	gpgsign = true
 [gpg]
 	program = C:\\Program Files (x86)\\GnuPG\\bin\\gpg.exe
+[diff]
+	guitool = winmerge
+[difftool "winmerge"]
+	path = C:/Program Files/WinMerge/winmergeu.exe
+	cmd = \"C:/Program Files/WinMerge/winmergeu.exe\" -e -u \"$LOCAL\" \"$REMOTE\"
+[merge]
+	guitool = winmerge
+[mergetool "winmerge"]
+	path = C:/Program Files/WinMerge/winmergeu.exe
+	cmd = \"C:/Program Files/WinMerge/winmergeu.exe\" -e -u  -wl -wr -fm -dl \"Mine: $LOCAL\" -dm \"Merged: $BASE\" -dr \"Theirs: $REMOTE\" \"$LOCAL\" \"$BASE\" \"$REMOTE\" -o \"$MERGED\"
+[pull]
+	rebase = false
+[fetch]
+	prune = false
+[rebase]
+	autoStash = false
+	autosquash = false
+	updateRefs = false
