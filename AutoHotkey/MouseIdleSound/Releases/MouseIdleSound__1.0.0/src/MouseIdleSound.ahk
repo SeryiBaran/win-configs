@@ -18,9 +18,9 @@ mp3File := A_WorkingDir . "\MouseIdleSound__SOUND.mp3"
 maxIdleTime := 5 * 1000
 ; ===================================================
 
-maxIdleTimeFromINI := Number(IniRead(iniFile, "settings", "MAX_IDLE_SECS"))
+maxIdleTimeFromINI := Float(IniRead(iniFile, "settings", "MAX_IDLE_SECS"))
 
-if (maxIdleTimeFromINI > 1)
+if (maxIdleTimeFromINI > 0.1)
 {
   maxIdleTime := maxIdleTimeFromINI * 1000
 }
