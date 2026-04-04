@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<helpItems schema="maml" xmlns="http://msh">
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-ColorWheel</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>ColorWheel</command:noun>
+      <maml:description>
+        <maml:para>Get a range of colors from a starting point aiming to avoid repetition. Doesn't return the starting color unless -Passthru is specified.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>Get a range of colors that wrap around the hue of the HSL color spectrum.</maml:para>
+      <maml:para>NOTE: this calls Gradient.GetRainbow, but is named more correctly. When you ask for a lot of colors, the color wheel will wrap around. To avoid repeating colors, it defaults to a HueStep of 50 (meaning it goes a full 360 degrees and wraps around fter 7 steps), but it also changes the brightness, so by the time it wraps around, it's not the same shade. As a result, it doesn't actually repeat unless you ask for hundreds of colors, but the more colors you ask for, the more similar they get. You can tweak that by using BrightStep or HueStep</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-ColorWheel</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="0" aliases="StartColor">
+          <maml:name>Color</maml:name>
+          <maml:Description>
+            <maml:para>The starting color (as an RGB color value)</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">RgbColor</command:parameterValue>
+          <dev:type>
+            <maml:name>RgbColor</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>Red</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="LightStep">
+          <maml:name>BrightStep</maml:name>
+          <maml:Description>
+            <maml:para>How much to adjust the lightness (alias Light step)</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
+          <dev:type>
+            <maml:name>Int32</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>4</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Count</maml:name>
+          <maml:Description>
+            <maml:para>How many colors to return</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
+          <dev:type>
+            <maml:name>Int32</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>7</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>HueStep</maml:name>
+          <maml:Description>
+            <maml:para>How many degrees of the color wheel to go for a new color.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
+          <dev:type>
+            <maml:name>Int32</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>50</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Passthru</maml:name>
+          <maml:Description>
+            <maml:para>If set, returns the start color in addition to the Count</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="LightStep">
+        <maml:name>BrightStep</maml:name>
+        <maml:Description>
+          <maml:para>How much to adjust the lightness (alias Light step)</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
+        <dev:type>
+          <maml:name>Int32</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>4</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="0" aliases="StartColor">
+        <maml:name>Color</maml:name>
+        <maml:Description>
+          <maml:para>The starting color (as an RGB color value)</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">RgbColor</command:parameterValue>
+        <dev:type>
+          <maml:name>RgbColor</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>Red</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Count</maml:name>
+        <maml:Description>
+          <maml:para>How many colors to return</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
+        <dev:type>
+          <maml:name>Int32</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>7</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>HueStep</maml:name>
+        <maml:Description>
+          <maml:para>How many degrees of the color wheel to go for a new color.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
+        <dev:type>
+          <maml:name>Int32</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>50</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Passthru</maml:name>
+        <maml:Description>
+          <maml:para>If set, returns the start color in addition to the Count</maml:para>
+        </maml:Description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>PoshCode.Pansies.RgbColor</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>PoshCode.Pansies.RgbColor</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>---- Example 1 -------------------------------------------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-ColorWheel Magenta -Bright 0</dev:code>
+        <dev:remarks>
+          <maml:para>Get a 7-color rainbow. Since we specified Magenta as the starting point, the first returned color is Red.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>---- Example 2 -------------------------------------------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-ColorWheel Magenta</dev:code>
+        <dev:remarks>
+          <maml:para>Gets a 2D gradient from the ConsoleColor Red to Blue, with as many colors as the current width of the console.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+</helpItems>

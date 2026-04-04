@@ -1,0 +1,150 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">Pansies</S>
+      <Version N="Version">2.6.0</Version>
+      <S N="Type">Module</S>
+      <S N="Description">A PowerShell module for handling color and cursor positioning via ANSI escape sequences</S>
+      <S N="Author">Joel Bennett</S>
+      <S N="CompanyName">Jaykul</S>
+      <S N="Copyright">(c) 2017 Joel Bennett. All rights reserved.</S>
+      <DT N="PublishedDate">2022-08-18T05:09:40+03:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2023-07-09T21:17:14.7613817+03:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://github.com/PoshCode/Pansies/blob/master/LICENSE</URI>
+      <URI N="ProjectUri">https://github.com/PoshCode/Pansies</URI>
+      <URI N="IconUri">https://github.com/PoshCode/Pansies/blob/resources/Pansies_32.gif?raw=true</URI>
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>ANSI</S>
+          <S>EscapeSequences</S>
+          <S>VirtualTerminal</S>
+          <S>Color</S>
+          <S>PSModule</S>
+          <S>PSEdition_Core</S>
+          <S>PSEdition_Desktop</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Workflow</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST>
+                <S>New-Text</S>
+                <S>New-Hyperlink</S>
+                <S>Write-Host</S>
+                <S>Get-Gradient</S>
+                <S>Get-Complement</S>
+                <S>Get-ColorWheel</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>New-Text</S>
+                <S>New-Hyperlink</S>
+                <S>Write-Host</S>
+                <S>Get-Gradient</S>
+                <S>Get-Complement</S>
+                <S>Get-ColorWheel</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">2.6.0: Make X11Palette an ArgumentCompleter:_x000D__x000A_            - It will tab-complete X11 color names. If you Ctrl+Space you get the list with preview swatches..._x000D__x000A_                [ArgumentCompleter([PoshCode.Pansies.Palettes.X11Palette])]_x000D__x000A_        2.5.0: Add a RGBColor constructor for the X11ColorName enum_x000D__x000A_            - So you can cast color names to RGBColor:_x000D__x000A_                using namespace PoshCode.Pansies_x000D__x000A_                using namespace PoshCode.Pansies.Palettes_x000D__x000A_                [RGBColor][X11ColorName]::Maroon2_x000D__x000A_        2.4.0: Switch to IPSMetadata serialization_x000D__x000A_            - Also add some cast constructors_x000D__x000A_            - Also add pipeline parameterSets for Get-Complement and Get-Cradient_x000D__x000A_            - Also minimize the whitespace when outputting color formatted_x000D__x000A_            - Also enabled emoji and nerdfont entities by default_x000D__x000A_        2.3.1: Fix index problem decoding entities_x000D__x000A_        2.3.0: Add emoji support_x000D__x000A_            - Also add nerdfont support_x000D__x000A_        2.2.0: Add static methods for speed optimization_x000D__x000A_        2.1.0: Hyperlinks_x000D__x000A_            - Added New-Hyperlink (alias URL) now that Windows Terminal supports them._x000D__x000A_              Note that Windows Console (conhost) _does not_ support hyperlinks, and any terminal which does not will ignore them._x000D__x000A_              For compatibility, always use the Uri as the text (i.e. do not pass the object parameter)._x000D__x000A_            - Added -PersistentColor option to reset the Foreground and Background for each object output when outputting arrays._x000D__x000A_        2.0.0: Breaking change for the library:_x000D__x000A_            - Merge the "Colormine" namespace into PoshCode.Pansies_x000D__x000A_              Originally, this was a 3rd party MIT licensed library by @THEJoeZack._x000D__x000A_              He pulled his repo, so I am now just integrating it into Pansies_x000D__x000A_            - Expose Complement and Gradient in the C# library for others to use_x000D__x000A_                - Add GetComplement() method to RgbColor_x000D__x000A_                - Add PoshCode.Pansies.Gradient class with GetGradient static method_x000D__x000A_                - Add Get-Complement and Get-Gradient wrappers in module assembly_x000D__x000A_        1.3.0: The color provider release_x000D__x000A_            - Add a RgbColor PSProvider that can convert colors to their escape sequences_x000D__x000A_            - Add Fg: drive and Bg: drive so you can "$Fg:Red$Bg:Blue$YourMessage"_x000D__x000A_            - Add support for x11 color names to make the drives more useful_x000D__x000A_        1.2.2: Use full namespace + class name for RgbColor_x000D__x000A_        1.2.1: Fix cmdlet export so New-Text and Write-Host show back up_x000D__x000A_               Make EXTERNALHELP work for functions_x000D__x000A_               Provide help for Get-Complement_x000D__x000A_        1.2.0: Better support for using ConsoleColors_x000D__x000A_               Added Get-Complement to calculate the HSL complement or contrasting colors_x000D__x000A_               Fixed ConsolePalette so it reads the current console colors when possible_x000D__x000A_        1.1.0: Support for serialization by the Configuration module_x000D__x000A_               Fix output of "bright" color object in ConEmu (workaround ConEmu bug)_x000D__x000A_        1.0.0: Pre-release version with support for RGB colors</S>
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST />
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="9">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">(c) 2017 Joel Bennett. All rights reserved.</S>
+          <S N="description">A PowerShell module for handling color and cursor positioning via ANSI escape sequences</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="releaseNotes">2.6.0: Make X11Palette an ArgumentCompleter:_x000D__x000A_            - It will tab-complete X11 color names. If you Ctrl+Space you get the list with preview swatches..._x000D__x000A_                [ArgumentCompleter([PoshCode.Pansies.Palettes.X11Palette])]_x000D__x000A_        2.5.0: Add a RGBColor constructor for the X11ColorName enum_x000D__x000A_            - So you can cast color names to RGBColor:_x000D__x000A_                using namespace PoshCode.Pansies_x000D__x000A_                using namespace PoshCode.Pansies.Palettes_x000D__x000A_                [RGBColor][X11ColorName]::Maroon2_x000D__x000A_        2.4.0: Switch to IPSMetadata serialization_x000D__x000A_            - Also add some cast constructors_x000D__x000A_            - Also add pipeline parameterSets for Get-Complement and Get-Cradient_x000D__x000A_            - Also minimize the whitespace when outputting color formatted_x000D__x000A_            - Also enabled emoji and nerdfont entities by default_x000D__x000A_        2.3.1: Fix index problem decoding entities_x000D__x000A_        2.3.0: Add emoji support_x000D__x000A_            - Also add nerdfont support_x000D__x000A_        2.2.0: Add static methods for speed optimization_x000D__x000A_        2.1.0: Hyperlinks_x000D__x000A_            - Added New-Hyperlink (alias URL) now that Windows Terminal supports them._x000D__x000A_              Note that Windows Console (conhost) _does not_ support hyperlinks, and any terminal which does not will ignore them._x000D__x000A_              For compatibility, always use the Uri as the text (i.e. do not pass the object parameter)._x000D__x000A_            - Added -PersistentColor option to reset the Foreground and Background for each object output when outputting arrays._x000D__x000A_        2.0.0: Breaking change for the library:_x000D__x000A_            - Merge the "Colormine" namespace into PoshCode.Pansies_x000D__x000A_              Originally, this was a 3rd party MIT licensed library by @THEJoeZack._x000D__x000A_              He pulled his repo, so I am now just integrating it into Pansies_x000D__x000A_            - Expose Complement and Gradient in the C# library for others to use_x000D__x000A_                - Add GetComplement() method to RgbColor_x000D__x000A_                - Add PoshCode.Pansies.Gradient class with GetGradient static method_x000D__x000A_                - Add Get-Complement and Get-Gradient wrappers in module assembly_x000D__x000A_        1.3.0: The color provider release_x000D__x000A_            - Add a RgbColor PSProvider that can convert colors to their escape sequences_x000D__x000A_            - Add Fg: drive and Bg: drive so you can "$Fg:Red$Bg:Blue$YourMessage"_x000D__x000A_            - Add support for x11 color names to make the drives more useful_x000D__x000A_        1.2.2: Use full namespace + class name for RgbColor_x000D__x000A_        1.2.1: Fix cmdlet export so New-Text and Write-Host show back up_x000D__x000A_               Make EXTERNALHELP work for functions_x000D__x000A_               Provide help for Get-Complement_x000D__x000A_        1.2.0: Better support for using ConsoleColors_x000D__x000A_               Added Get-Complement to calculate the HSL complement or contrasting colors_x000D__x000A_               Fixed ConsolePalette so it reads the current console colors when possible_x000D__x000A_        1.1.0: Support for serialization by the Configuration module_x000D__x000A_               Fix output of "bright" color object in ConEmu (workaround ConEmu bug)_x000D__x000A_        1.0.0: Pre-release version with support for RGB colors</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">10993</S>
+          <S N="downloadCount">48320</S>
+          <S N="packageSize">207996</S>
+          <S N="published">18.08.2022 5:09:40 +03:00</S>
+          <S N="created">18.08.2022 5:09:40 +03:00</S>
+          <S N="lastUpdated">09.07.2023 13:01:56 +03:00</S>
+          <S N="tags">ANSI EscapeSequences VirtualTerminal Color PSModule PSEdition_Core PSEdition_Desktop PSCmdlet_New-Text PSCommand_New-Text PSCmdlet_New-Hyperlink PSCommand_New-Hyperlink PSCmdlet_Write-Host PSCommand_Write-Host PSCmdlet_Get-Gradient PSCommand_Get-Gradient PSCmdlet_Get-Complement PSCommand_Get-Complement PSCmdlet_Get-ColorWheel PSCommand_Get-ColorWheel PSIncludes_Cmdlet</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2023-07-09T13:01:56Z</S>
+          <S N="NormalizedVersion">2.6.0</S>
+          <S N="Authors">Joel Bennett</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">Pansies.nuspec|Pansies.format.ps1xml|Pansies.psd1|Pansies.psm1|en-US\Pansies-help.xml|en-US\Pansies.dll-Help.xml|lib\CodeOwls.PowerShell.Paths.deps.json|lib\CodeOwls.PowerShell.Paths.dll|lib\CodeOwls.PowerShell.Provider.deps.json|lib\CodeOwls.PowerShell.Provider.dll|lib\Pansies.deps.json|lib\Pansies.dll</S>
+          <S N="GUID">6c376de1-1baf-4d52-9666-d46f6933bc16</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="CompanyName">HuddledMasses.org</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\ivan\Documents\PowerShell\Modules\Pansies\2.6.0</S>
+    </MS>
+  </Obj>
+</Objs>
